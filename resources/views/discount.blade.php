@@ -77,12 +77,7 @@
           <div class="col-6 col-xl-2 text-right">
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                <li>
-                  <a href="#" class="pl-0 pr-3 text-black"><span class="icon-tripadvisor"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
-                </li>
+              
                 <li>
                   <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
                 </li>
