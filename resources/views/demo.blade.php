@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <!-- Sử dụng asset() để tạo URL đúng -->
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
 </head>
 <body>
-    <h1>Hello WOrld!</h1>
-</body>
+    <h1>Hello World!</h1>
+</body> 
 </html>
