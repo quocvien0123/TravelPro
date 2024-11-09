@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/resources/css/magnific-popup.css">
-    <link rel="stylesheet" href="/resources/css/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="/resources/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="/resources/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
-    <link rel="stylesheet" href="/resources/css/aos.css">
+    <link rel="stylesheet" href="../css/aos.css">
 
-    <link rel="stylesheet" href="/resources/css/stylehome.css">
+    <link rel="stylesheet" href="../css/stylehome.css">
     
   </head>
   <body>
@@ -106,7 +106,7 @@
 
    
 
-    <div class="site-blocks-cover inner-page-cover" style="background-image: url(/resources/image/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover inner-page-cover" style="background-image: url(../image/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
@@ -129,7 +129,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="/resources/image/01-greece.jpg" alt="Image" class="img-fluid">
+              <img src="../image/01-greece.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$590</strong>
                 <h3 class="unit-1-heading">Santorini, Greece</h3>
@@ -138,7 +138,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="/resources/image/02-rome.jpg" alt="Image" class="img-fluid">
+              <img src="../image/02-rome.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
                 <h3 class="unit-1-heading">Rome, Italy</h3>
@@ -147,7 +147,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="/resources/image/03-japan.jpg" alt="Image" class="img-fluid">
+              <img src="../image/03-japan.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
                 <h3 class="unit-1-heading">Mount Fuji, Japan</h3>
@@ -157,7 +157,7 @@
 
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="/resources/image/04-dubai.jpg" alt="Image" class="img-fluid">
+              <img src="../image/04-dubai.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$320</strong>
                 <h3 class="unit-1-heading">Camels, Dubai</h3>
@@ -166,7 +166,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="/resources/image/05-london.jpg" alt="Image" class="img-fluid">
+              <img src="../image/05-london.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$290</strong>
                 <h3 class="unit-1-heading">Elizabeth Tower, London</h3>
@@ -175,7 +175,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="/resources/image/06-australia.jpg" alt="Image" class="img-fluid">
+              <img src="../image/06-australia.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
                 <h3 class="unit-1-heading">Opera House, Australia</h3>
@@ -203,7 +203,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="/resources/image/img_1.jpg" alt="Image" class="img-md-fluid">
+                  <img src="../image/img_1.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                   <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
@@ -217,7 +217,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="/resources/image/img_2.jpg" alt="Image" class="img-md-fluid">
+                  <img src="../image/img_2.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                   <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
@@ -231,7 +231,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="/resources/image/img_4.jpg" alt="Image" class="img-md-fluid">
+                  <img src="../image/img_4.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                   <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
@@ -364,19 +364,19 @@
     </footer>
   </div>
 
-  <script src="/resources/js/jquery-3.3.1.min.js"></script>
-  <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="/resources/js/jquery-ui.js"></script>
-  <script src="/resources/js/popper.min.js"></script>
-  <script src="/resources/js/bootstrap.min.js"></script>
-  <script src="/resources/js/owl.carousel.min.js"></script>
-  <script src="/resources/js/jquery.stellar.min.js"></script>
-  <script src="/resources/js/jquery.countdown.min.js"></script>
-  <script src="/resources/js/jquery.magnific-popup.min.js"></script>/resources/
-  <script src="/resources/js/bootstrap-datepicker.min.js"></script>
-  <script src="/resources/js/aos.js"></script>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/jquery.stellar.min.js"></script>
+  <script src="../js/jquery.countdown.min.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>../
+  <script src="../js/bootstrap-datepicker.min.js"></script>
+  <script src="../js/aos.js"></script>
 
-  <script src="/resources/js/mainhome.js"></script>
+  <script src="../js/mainhome.js"></script>
     
   </body>
 </html>
