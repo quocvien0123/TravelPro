@@ -9614,7 +9614,7 @@ button.bg-dark:hover {
 }
 
 .font-weight-light {
-    font-weight: 300 !important;
+    font-weight: bold !important;
 }
 
 .font-weight-normal {
