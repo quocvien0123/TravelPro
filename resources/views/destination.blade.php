@@ -45,30 +45,28 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0"><a href="../../index.html" class="text-black h2 mb-0">Travelers</a></h1>
+            <h1 class="mb-0"><a href="../../index.html" class="text-black h2 mb-0">TravelPro</a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li>
-                  <a href="../../index.html">Home</a>
+                  <a href="../../index.html">Trang chủ</a>
                 </li>
                 <li class="has-children active">
-                  <a href="destination.blade.php">Destinations</a>
+                  <a href="destination.blade.php">Điểm đến</a>
                   <ul class="dropdown">
-                    <li><a href="#">Japan</a></li>
-                    <li><a href="#">Europe</a></li>
-                    <li><a href="#">China</a></li>
-                    <li><a href="#">France</a></li>
+                    <li><a href="#">Miền Bắc</a></li>
+                    <li><a href="#">Miền Trung</a></li>
+                    <li><a href="#">Miền Nam</a></li>
                   </ul>
                 </li>
                 
-                <li><a href="discount.blade.php">Discount</a></li>
-                <li><a href="about.blade.php">About</a></li>
+                <li><a href="discount.blade.php">Deal sốc</a></li>
+                <li><a href="about.blade.php">Giới thiệu</a></li>
                 <li><a href="blog.blade.php">Blog</a></li>
-                
-                <li><a href="contact.blade.php">Contact</a></li>
+                <li><a href="contact.blade.php">Liên Hệ</a></li>
                 <!-- <li><a href="booking.html">Book Online</a></li> -->
               </ul>
             </nav>
@@ -83,6 +81,12 @@
                 </li>
                 <li>
                   <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-google"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-phone"></span></a>
                 </li>
                 
               </ul>
@@ -106,8 +110,8 @@
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h1 class="text-white font-weight-light">Destinations</h1>
-              <div><a href="../../index.html">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Destinations</span></div>
+              <h1 class="text-white font-weight-light">Điểm Đến</h1>
+              <div><a href="../../index.html">Trang chủ</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Điểm đến</span></div>
               
             </div>
           </div>
@@ -198,11 +202,19 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="../image/img_1.jpg" alt="Image" class="img-md-fluid">
+                  <img src="../image/img_7.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
-                  <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
-                  <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p>
+                  <p class="text-black lead">&ldquo;Mình rất ấn tượng với dịch vụ của TravelPro!
+                    Chuyến du lịch Đà Nẵng - Hội An vừa rồi thật đáng nhớ nhờ sự tổ chức chuyên
+                    nghiệp và tận tâm của đội ngũ. Khách sạn thoải mái, các điểm tham quan được sắp
+                    xếp hợp
+                    lý, và hướng dẫn viên rất thân thiện, luôn chia sẻ nhiều thông tin thú vị. Đặt
+                    tour nhanh gọn, không có phát sinh thêm chi phí nào. Đây thực sự là lựa chọn
+                    hàng đầu cho những ai muốn có một kỳ nghỉ trọn vẹn mà không
+                    phải lo lắng gì! &rdquo;
+                  </p>
+                  <p class="">&mdash; <em>Khách hàng c</em>, <a href="#">TravePro</a></p>
                 </div>
               </div>
             </div>
@@ -212,11 +224,17 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="../image/img_2.jpg" alt="Image" class="img-md-fluid">
+                  <img src="../image/img_6.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
-                  <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
-                  <p class="">&mdash; <em>Clair Augustin</em>, <a href="#">Traveler</a></p>
+                  <p class="text-black lead">&ldquo;Chuyến du lịch cùng TravelPro thật tuyệt vời! Mình
+                    đã có một trải nghiệm đáng nhớ tại Phú Quốc với dịch vụ trọn gói, từ vé máy bay
+                    đến khách sạn đều được chuẩn bị chu đáo. Hướng dẫn viên nhiệt tình, am hiểu và
+                    luôn hỗ trợ chúng mình suốt hành trình. Đây thực sự là một kỳ nghỉ hoàn hảo mà
+                    mình muốn giới thiệu đến bạn bè. Cảm ơn TravelPro vì chuyến đi tuyệt vời
+                    này!"&ldquo;
+                  </p>
+                  <p class="">&mdash; <em>Khác hàng a</em>, <a href="#">TravePro</a></p>
                 </div>
               </div>
             </div>
@@ -229,8 +247,14 @@
                   <img src="../image/img_4.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
-                  <p class="text-black lead">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro&rdquo;</p>
-                  <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p>
+                  <p class="text-black lead">&ldquo;Đặt tour qua TravelPro là một trải nghiệm rất hài
+                    lòng! Mình và gia đình đã chọn tour du thuyền khám phá vịnh Hạ Long, và mọi thứ
+                    đều diễn ra đúng như mong đợi. Lịch trình hợp lý, du thuyền sang trọng, và các
+                    bữa ăn rất ngon miệng. Đặc biệt, nhân viên hỗ trợ rất nhanh chóng và nhiệt tình,
+                    giúp mình yên tâm suốt chuyến đi. Chắc chắn mình sẽ quay lại TravelPro cho những
+                    chuyến du lịch tiếp theo! &ldquo;
+                  </p>
+                  <p class="">&mdash; <em>Khác hàng b</em>, <a href="#">TravelPro</a></p>
                 </div>
               </div>
             </div>
@@ -243,36 +267,43 @@
     <div class="site-section">
       <div class="container">
         <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-airplane"></span></div>
-              <div>
-                <h3>Air Ticketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-ship"></span></div>
-              <div>
-                <h3>Cruises</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-route"></span></div>
-              <div>
-                <h3>Tour Packages</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
+                      <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                          <div class="unit-4 d-flex">
+                              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-airplane"></span></div>
+                              <div>
+                                  <h3 style="font-weight: bold;">Vé máy bay</h3>
+                                  <p>Cung cấp vé máy bay giá rẻ, dịch vụ đặt vé nhanh chóng
+                                      và tiện lợi với mạng lưới các hãng hàng không uy tín.
+                                      Đảm bảo phù hợp nhu cầu và ngân sách của bạn.
+                                  </p>
+                                  <p><a href="#">Tìm hiểu thêm</a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                          <div class="unit-4 d-flex">
+                              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-ship"></span></div>
+                              <div>
+                                  <h3 style="font-weight: bold;">Du thuyền</h3>
+                                  <p>Đuợc trải nghiệm các tour du thuyền đẳng cấp khám phá vẻ đẹp biển đảo Việt Nam.
+                                      Đa dạng lựa chọn từ tiêu chuẩn đến cao cấp, phù hợp cho mọi nhu cầu thư giãn.
+                                  </p>
+                                  <p><a href="#">Tìm hiểu thêm</a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                          <div class="unit-4 d-flex">
+                              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-route"></span></div>
+                              <div>
+                                  <h3 style="font-weight: bold;">Du lịch trọn gói</h3>
+                                  <p>Du lịch tiện lợi gồm vé máy bay, khách sạn, giải trí, di chuyển và hướng dẫn viên.
+                                      Chỉ cần lên đường, tận hưởng chuyến đi không lo nghĩ.
+                                  </p>
+                                  <p><a href="#">Tìm hiểu thêm</a></p>
+                              </div>
+                          </div>
+                      </div>
 
         </div>
       </div>
@@ -283,52 +314,60 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Travelers</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
+              <h3 class="footer-heading mb-4">Về TravePro</h3>
+              <p>TravelPro là nền tảng đặt tour du lịch trọn gói, giúp khách hàng dễ dàng chọn
+                lựa các gói tour chi tiết và tận hưởng kỳ nghỉ mà không cần bận tâm về lịch trình.
+                Với TravelPro, chỉ cần đặt chỗ và sẵn sàng cho những trải nghiệm thú vị!</p>
             </div>
 
-            
-            
+
+
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="row mb-5">
               <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Navigations</h3>
+                <h3 class="footer-heading mb-4">Điều hướng</h3>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Destination</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="../../index.html">Trang chủ</a></li>
+                  <li><a href="destination.blade.php">Điểm đến</a></li>
+                  <li><a href="discount.blade.php">Deal sốc</a></li>
+                  <li><a href="blog.blade.php">Blog</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Discounts</a></li>
+                  <li><a href="#">Dịch Vụ</a></li>
+                  <li><a href="about.blade.php">Giới thiệu</a></li>
+                  <li><a href="contact.blade.php">Liên hệ</a></li>
+                  <li><a href="#">Bảo mật</a></li>
                 </ul>
               </div>
             </div>
 
-            
+
 
           </div>
 
           <div class="col-lg-4 mb-5 mb-lg-0">
-           
+
 
             <div class="mb-5">
-              <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
+              <h3 class="footer-heading mb-2">Đăng ký nhận bảng tin</h3>
+              <p>
+                Đăng ký nhận bản tin từ TravelPro để cập nhật nhanh nhất về các gói tour mới,
+                ưu đãi đặc biệt và mẹo du lịch hữu ích – giúp bạn không bỏ lỡ cơ hội khám phá tuyệt vời!
+              </p>
 
               <form action="#" method="post">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent"
+                    placeholder="Nhập Email" aria-label="Enter Email"
+                    aria-describedby="button-addon2">
                   <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+                    <button class="btn btn-primary text-white" type="button"
+                      id="button-addon2">Gửi</button>
                   </div>
                 </div>
               </form>
@@ -336,26 +375,18 @@
             </div>
 
           </div>
-          
+
         </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="mb-5">
               <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
               <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </div>
+              <a href="#" class="pl-3 pr-3"><span class="icon-google"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-phone"></span></a>
 
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+            </div>
           </div>
-          
-        </div>
-      </div>
     </footer>
   </div>
 

@@ -295,17 +295,17 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="index.html">Trang chủ</a></li>
-                  <li><a href="./resources/views/destination.blade.php">Điểm đến</a></li>
-                  <li><a href="./resources/views/discount.blade.php">Deal sốc</a></li>
-                  <li><a href="./resources/views/blog.blade.php">Blog</a></li>
+                  <li><a href="../../index.html">Trang chủ</a></li>
+                  <li><a href="destination.blade.php">Điểm đến</a></li>
+                  <li><a href="discount.blade.php">Deal sốc</a></li>
+                  <li><a href="blog.blade.php">Blog</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
                   <li><a href="#">Dịch Vụ</a></li>
-                  <li><a href="./resources/views/about.blade.php">Giới thiệu</a></li>
-                  <li><a href="./resources/views/contact.blade.php">Liên hệ</a></li>
+                  <li><a href="about.blade.php">Giới thiệu</a></li>
+                  <li><a href="contact.blade.php">Liên hệ</a></li>
                   <li><a href="#">Bảo mật</a></li>
                 </ul>
               </div>
