@@ -44,40 +44,19 @@ function checkEmail(email) {
 
 email.addEventListener("input", function() {
     if (!checkEmail(email.value)) {
-        emailError.textContent = "*Email is not valid";
+        emailError.textContent = "*Email không hợp lệ";
     } else {
         emailError.textContent = "";
     }
 });
 
-// Check length input user name
-username.addEventListener("input", function() {
-    if (username.value.length < 4) {
-        usernameError.textContent = "*Username must be at least 8 characters.";
-    } else if (username.value.length > 20) {
-        usernameError.textContent = "*Username must be less than 20 characters.";
-    } else {
-        usernameError.textContent = "";
-    }
-});
-
-// Check length input password
-password.addEventListener("input", function() {
-    if (password.value.length < 8) {
-        passwordError.textContent = "*Password must be at least 8 characters.";
-    } else if (password.value.length > 20) {
-        passwordError.textContent = "*Password must be less than 20 characters.";
-    } else {
-        passwordError.textContent = "";
-    }
-});
 
 // Check required fields
 function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function(input) {
         if (input.value.trim() === "") {
-            showError(input, `*${getFieldName(input)} is required`);
+            showError(input, `*Vui lòng nhập thông tin`);
             isRequired = true;
         } else {
             showSuccess(input);
@@ -133,22 +112,12 @@ function checkEmail2(lgEmail) {
 
 lgEmail.addEventListener("input", function() {
     if (!checkEmail2(lgEmail.value)) {
-        lgEmailError.textContent = "*Email is not valid";
+        lgEmailError.textContent = "*Email không hợp lệ";
     } else {
         lgEmailError.textContent = "";
     }
 });
 
-// Check length input passwrod
-lgPassword.addEventListener("input", function() {
-    if (lgPassword.value.length < 8) {
-        lgPasswordError.textContent = "*Password must be at least 8 characters.";
-    } else if (lgPassword.value.length > 20) {
-        lgPasswordError.textContent = "*Password must be less than 20 characters.";
-    } else {
-        lgPasswordError.textContent = "";
-    }
-});
 
 function checkRequiredLg(inputArr2) {
     let isRequiredLg = false;
@@ -156,7 +125,7 @@ function checkRequiredLg(inputArr2) {
         if (input.value.trim() === "") {
             showError2(
                 input,
-                `*${getFieldNameLg(input)} Please enter your information in this field`
+                `*${getFieldNameLg(input)} Vui lòng nhập thông tin!`
             );
             isRequiredLg = true;
         } else {

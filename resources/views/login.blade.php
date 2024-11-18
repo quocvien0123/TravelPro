@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Travle Pro</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/resources/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 </head>
@@ -15,9 +15,9 @@
     <div class="container" id="container">
         <div class="form-container register-container">
             <form>
-                <h1>SIGN UP</h1>
+                <h1>Đăng Ký</h1>
                 <div class="form-control">
-                    <input type="text" id="username" placeholder="Username" />
+                    <input type="text" id="username" placeholder="Tên đăng nhập" />
                     <small id="username-error"></small>
                     <span></span>
                 </div>
@@ -27,12 +27,12 @@
                     <span></span>
                 </div>
                 <div class="form-control">
-                    <input type="password" id="password" placeholder="Password" />
+                    <input type="password" id="password" placeholder="Mật khẩu" />
                     <small id="password-error"></small>
                     <span></span>
                 </div>
-                <button type="submit" value="submit">Register</button>
-                <span>Use your account</span>
+                <button type="submit" value="submit">Đăng Ký</button>
+                <span>Đăng nhập bằng tài khoản</span>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
@@ -43,14 +43,14 @@
 
         <div class="form-container login-container">
             <form class="form-lg">
-                <h1>WELCOME </h1>
+                <h1>Đăng Nhập</h1>
                 <div class="form-control2">
-                    <input type="text" class="email-2" placeholder="UserName" />
+                    <input type="text" class="email-2" placeholder="Tên đăng nhập" />
                     <small class="username-error"></small>
                     <span></span>
                 </div>
                 <div class="form-control2">
-                    <input type="password" class="password-2" placeholder="Password     " />
+                    <input type="password" class="password-2" placeholder="Mật khẩu" />
                     <small class="password-error-2"></small>
                     <span></span>
                 </div>
@@ -58,14 +58,14 @@
                 <div class="content">
                     <div class="checkbox">
                         <input type="checkbox" name="checkbox" id="checkbox" />
-                        <label for="">Remember</label>
+                        <label for="">Ghi nhớ</label>
                     </div>
                     <div class="pass-link">
-                        <a href="#">Forgot Password?</a>
+                        <a href="#">Quên mật khẩu?</a>
                     </div>
                 </div>
-                <button type="submit" value="submit">Login</button>
-                <span>Use your account</span>
+                <button type="submit" value="submit">Đăng Nhập</button>
+                <span>Đăng nhập bằng tài khoản</span>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class "social"><i class="fa-brands fa-google"></i></a>
@@ -78,24 +78,24 @@
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1 class="title">
-                        Welcome to <br /> TravlePro
+                        Chào mừng đến với <br /> TravlePro
                     </h1>
-                    <p>If you already have an account, please login and start experiencing.</p>
+                    <p>Nếu bạn đã có tài khoản hãy đăng nhập và bắt đầu trải nghiệm.</p>
                     <button class="ghost" id="login">
-                        Login
+                        Đăng Nhập
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
                 </div>
 
                 <div class="overlay-panel overlay-right">
                     <h1 class="title">
-                        Start your trip now
+                        Bắt đầu hành trình của bạn
                     </h1>
                     <p>
-                        If you don't have an account yet, join us and start your journey.
+                    Nếu bạn chưa có tài khoản, hãy tham gia cùng chúng tôi và bắt đầu hành trình của mình.
                     </p>
                     <button class="ghost" id="register">
-                        Register
+                        Đăng Ký
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -103,6 +103,6 @@
         </div>
     </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="/resources/js/main.js"></script>
 
 </html>

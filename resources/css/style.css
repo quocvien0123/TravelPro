@@ -15,6 +15,7 @@ body {
     font-family: "Poppins", sans-serif;
     overflow: hidden;
     height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h1 {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     margin: 0;
     margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1.title {
@@ -35,6 +37,7 @@ h1.title {
     letter-spacing: -0.5px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p {
@@ -48,6 +51,8 @@ p {
     /* Thêm khoảng đệm xung quanh đoạn văn */
     border-radius: 5px;
     /* Bo tròn các góc cho đẹp mắt */
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 span {
@@ -61,6 +66,7 @@ a {
     text-decoration: none;
     margin: 15px 0;
     transition: 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a:hover {
@@ -99,9 +105,9 @@ button {
     border: 1px solid #686c78;
     background-color: #686c78;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
-    margin: 20px;
+    margin: 10px;
     padding: 12px 80px;
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -110,8 +116,14 @@ button {
 }
 
 button:hover {
-    letter-spacing: 3px;
+    background-color: #fff;
+    color: #2e6072;
 }
+
+button:hover {
+    letter-spacing: 2px;
+}
+
 
 button:active {
     transform: scale(0.95);

@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
-    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/resources/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/magnific-popup.css">
+    <link rel="stylesheet" href="/resources/css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/resources/css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/resources/fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
-    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="/resources/css/aos.css">
 
-    <link rel="stylesheet" href="../css/stylehome.css">
+    <link rel="stylesheet" href="/resources/css/stylehome.css">
     
   </head>
   <body>
@@ -45,14 +45,14 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0"><a href="../../index.html" class="text-black h2 mb-0">TravelPro</a></h1>
+            <h1 class="mb-0"><a href="/resources//resources/index.html" class="text-black h2 mb-0">TravelPro</a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li>
-                  <a href="../../index.html">Trang chủ</a>
+                  <a href="/resources//resources/index.html">Trang chủ</a>
                 </li>
                 <li class="has-children active">
                   <a href="destination.blade.php">Điểm đến</a>
@@ -105,13 +105,13 @@
 
    
 
-    <div class="site-blocks-cover inner-page-cover" style="background-image: url(../image/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover inner-page-cover" style="background-image: url(/resources/image/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h1 class="text-white font-weight-light">Điểm Đến</h1>
-              <div><a href="../../index.html">Trang chủ</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Điểm đến</span></div>
+              <div><a href="/resources//resources/index.html">Trang chủ</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Điểm đến</span></div>
               
             </div>
           </div>
@@ -128,7 +128,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="../image/01-greece.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/01-greece.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$590</strong>
                 <h3 class="unit-1-heading">Santorini, Greece</h3>
@@ -137,7 +137,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="../image/02-rome.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/02-rome.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
                 <h3 class="unit-1-heading">Rome, Italy</h3>
@@ -146,7 +146,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="../image/03-japan.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/03-japan.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
                 <h3 class="unit-1-heading">Mount Fuji, Japan</h3>
@@ -156,7 +156,7 @@
 
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="../image/04-dubai.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/04-dubai.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$320</strong>
                 <h3 class="unit-1-heading">Camels, Dubai</h3>
@@ -165,7 +165,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="../image/05-london.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/05-london.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$290</strong>
                 <h3 class="unit-1-heading">Elizabeth Tower, London</h3>
@@ -174,7 +174,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="../image/06-australia.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/06-australia.jpg" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">$390</strong>
                 <h3 class="unit-1-heading">Opera House, Australia</h3>
@@ -202,7 +202,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="../image/img_7.jpg" alt="Image" class="img-md-fluid">
+                  <img src="/resources/image/img_7.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                   <p class="text-black lead">&ldquo;Mình rất ấn tượng với dịch vụ của TravelPro!
@@ -224,7 +224,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="../image/img_6.jpg" alt="Image" class="img-md-fluid">
+                  <img src="/resources/image/img_6.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                   <p class="text-black lead">&ldquo;Chuyến du lịch cùng TravelPro thật tuyệt vời! Mình
@@ -244,7 +244,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-5">
-                  <img src="../image/img_4.jpg" alt="Image" class="img-md-fluid">
+                  <img src="/resources/image/img_4.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                   <p class="text-black lead">&ldquo;Đặt tour qua TravelPro là một trải nghiệm rất hài
@@ -330,7 +330,7 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="../../index.html">Trang chủ</a></li>
+                  <li><a href="/resources//resources/index.html">Trang chủ</a></li>
                   <li><a href="destination.blade.php">Điểm đến</a></li>
                   <li><a href="discount.blade.php">Deal sốc</a></li>
                   <li><a href="blog.blade.php">Blog</a></li>
@@ -390,19 +390,19 @@
     </footer>
   </div>
 
-  <script src="../js/jquery-3.3.1.min.js"></script>
-  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="../js/jquery-ui.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/jquery.stellar.min.js"></script>
-  <script src="../js/jquery.countdown.min.js"></script>
-  <script src="../js/jquery.magnific-popup.min.js"></script>../
-  <script src="../js/bootstrap-datepicker.min.js"></script>
-  <script src="../js/aos.js"></script>
+  <script src="/resources/js/jquery-3.3.1.min.js"></script>
+  <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/resources/js/jquery-ui.js"></script>
+  <script src="/resources/js/popper.min.js"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+  <script src="/resources/js/owl.carousel.min.js"></script>
+  <script src="/resources/js/jquery.stellar.min.js"></script>
+  <script src="/resources/js/jquery.countdown.min.js"></script>
+  <script src="/resources/js/jquery.magnific-popup.min.js"></script>/resources/
+  <script src="/resources/js/bootstrap-datepicker.min.js"></script>
+  <script src="/resources/js/aos.js"></script>
 
-  <script src="../js/mainhome.js"></script>
+  <script src="/resources/js/mainhome.js"></script>
     
   </body>
 </html>
