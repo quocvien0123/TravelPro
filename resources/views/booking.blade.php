@@ -65,7 +65,6 @@
                   </ul>
                 </li>
 
-                <li><a href="discount.blade.php">Deal sốc</a></li>
                 <li><a href="about.blade.php">Giới thiệu</a></li>
                 <li class="active"><a href="blog.blade.php">Blog</a></li>
 
@@ -240,7 +239,6 @@
                 <ul class="list-unstyled">
                   <li><a href="/resources/views/home.blade.php">Trang chủ</a></li>
                   <li><a href="destination.blade.php">Điểm đến</a></li>
-                  <li><a href="discount.blade.php">Deal sốc</a></li>
                   <li><a href="blog.blade.php">Blog</a></li>
                 </ul>
               </div>
