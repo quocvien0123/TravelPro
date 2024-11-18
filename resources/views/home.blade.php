@@ -8,24 +8,24 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
-    <link rel="stylesheet" href="./resources/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/resources/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./resources/css/magnific-popup.css">
-    <link rel="stylesheet" href="./resources/css/jquery-ui.css">
-    <link rel="stylesheet" href="./resources/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/magnific-popup.css">
+    <link rel="stylesheet" href="/resources/css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/resources/css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="./resources/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="./resources/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/resources/fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
 
-    <link rel="stylesheet" href="./resources/css/aos.css">
+    <link rel="stylesheet" href="/resources/css/aos.css">
 
-    <link rel="stylesheet" href="./resources/css/stylehome.css">
+    <link rel="stylesheet" href="/resources/css/stylehome.css">
 
 </head>
 
@@ -48,17 +48,17 @@
                 <div class="row align-items-center">
 
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">TravelPro</a></h1>
+                        <h1 class="mb-0"><a href="/resources/views/home.blade.php" class="text-black h2 mb-0">TravelPro</a></h1>
                     </div>
                     <div class="col-10 col-md-8 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
                             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                                 <li class="active">
-                                    <a href="index.html">Trang chủ</a>
+                                    <a href="/resources/views/home.blade.php">Trang chủ</a>
                                 </li>
                                 <li class="has-children">
-                                    <a href="./resources/views/destination.blade.php">Điểm đến</a>
+                                    <a href="/resources/views/destination.blade.php">Điểm đến</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Miền Bắc</a></li>
                                         <li><a href="#">Miền Trung</a></li>
@@ -66,11 +66,10 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="./resources/views/discount.blade.php">Deal sốc</a></li>
-                                <li><a href="./resources/views/about.blade.php">Giới thiệu</a></li>
-                                <li><a href="./resources/views/blog.blade.php">Blog</a></li>
+                                <li><a href="/resources/views/about.blade.php">Giới thiệu</a></li>
+                                <li><a href="/resources/views/blog.blade.php">Blog</a></li>
 
-                                <li><a href="./resources/views/contact.blade.php">Liên hệ </a></li>
+                                <li><a href="/resources/views/contact.blade.php">Liên hệ </a></li>
                                 <!-- <li><a href="booking.html">Book Online</a></li> -->
                             </ul>
                         </nav>
@@ -111,7 +110,7 @@
 
 
         <div class="slide-one-item home-slider owl-carousel">
-            <div class="site-blocks-cover overlay" style="background-image: url(./resources/image/hero_bg_1.jpg);"
+            <div class="site-blocks-cover overlay" style="background-image: url(/resources/image/hero_bg_1.jpg);"
                 data-aos="fade" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
@@ -123,14 +122,14 @@
                             <p class="mb-5" style="color: aqua;">Khám phá địa điểm du lịch yêu thích của bạn với chúng
                                 tôi!
                             </p>
-                            <p><a href="./resources/views/booking.blade.php" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
+                            <p><a href="/resources/views/booking.blade.php" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
 
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="site-blocks-cover overlay" style="background-image: url(./resources/image/hero_bg_2.jpg);"
+            <div class="site-blocks-cover overlay" style="background-image: url(/resources/image/hero_bg_2.jpg);"
                 data-aos="fade" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
@@ -141,7 +140,7 @@
                             </h1>
                             <p class="mb-5" style="color: aqua;">Bay xa,mơ lớn - Hành trình của bạn bắt đầu từ đây
                             </p>
-                            <p><a href="./resources/views/booking.blade.php" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
+                            <p><a href="/resources/views/booking.blade.php" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
                         </div>
                     </div>
                 </div>
@@ -156,7 +155,7 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/img_2.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/img_2.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <h3 class="unit-1-heading">Khám phá miền Bắc</h3>
                             </div>
@@ -164,7 +163,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/img_1.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/img_1.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <h3 class="unit-1-heading">Khám phá miền Trung</h3>
                             </div>
@@ -172,7 +171,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/img_3.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/img_3.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <h3 class="unit-1-heading">Khám phá miền Nam</h3>
                             </div>
@@ -250,7 +249,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 mb-5">
-                                    <img src="./resources/image/img_7.jpg" alt="Image" class="img-md-fluid">
+                                    <img src="/resources/image/img_7.jpg" alt="Image" class="img-md-fluid">
                                 </div>
                                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                                     <p class="text-black lead">&ldquo;Mình rất ấn tượng với dịch vụ của TravelPro!
@@ -272,7 +271,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 mb-5">
-                                    <img src="./resources/image/img_6.jpg" alt="Image" class="img-md-fluid">
+                                    <img src="/resources/image/img_6.jpg" alt="Image" class="img-md-fluid">
                                 </div>
                                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                                     <p class="text-black lead">&ldquo;Chuyến du lịch cùng TravelPro thật tuyệt vời! Mình
@@ -292,7 +291,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 mb-5">
-                                    <img src="./resources/image/img_4.jpg" alt="Image" class="img-md-fluid">
+                                    <img src="/resources/image/img_4.jpg" alt="Image" class="img-md-fluid">
                                 </div>
                                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
                                     <p class="text-black lead">&ldquo;Đặt tour qua TravelPro là một trải nghiệm rất hài
@@ -326,7 +325,7 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/01-greece.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/01-greece.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <strong class="text-primary mb-2 d-block">$590</strong>
                                 <h3 class="unit-1-heading">Santorini, Greece</h3>
@@ -335,7 +334,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/02-rome.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/02-rome.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <strong class="text-primary mb-2 d-block">$390</strong>
                                 <h3 class="unit-1-heading">Rome, Italy</h3>
@@ -344,7 +343,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/03-japan.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/03-japan.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <strong class="text-primary mb-2 d-block">$390</strong>
                                 <h3 class="unit-1-heading">Mount Fuji, Japan</h3>
@@ -354,7 +353,7 @@
 
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/04-dubai.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/04-dubai.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <strong class="text-primary mb-2 d-block">$320</strong>
                                 <h3 class="unit-1-heading">Camels, Dubai</h3>
@@ -363,7 +362,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/05-london.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/05-london.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <strong class="text-primary mb-2 d-block">$290</strong>
                                 <h3 class="unit-1-heading">Elizabeth Tower, London</h3>
@@ -372,7 +371,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                         <a href="#" class="unit-1 text-center">
-                            <img src="./resources/image/06-australia.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/06-australia.jpg" alt="Image" class="img-fluid">
                             <div class="unit-1-text">
                                 <strong class="text-primary mb-2 d-block">$390</strong>
                                 <h3 class="unit-1-heading">Opera House, Australia</h3>
@@ -390,7 +389,7 @@
 
 
         <div class="site-blocks-cover overlay inner-page-cover"
-            style="background-image: url(./resources/image/hero_bg_2.jpg); background-attachment: fixed;">
+            style="background-image: url(/resources/image/hero_bg_2.jpg); background-attachment: fixed;">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
 
@@ -498,7 +497,7 @@
                 <div class="row mb-3 align-items-stretch">
                     <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
                         <div class="h-entry">
-                            <img src="./resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid">
                             <h2 class="font-size-regular"><a href="#">Cách lên kế hoạch cho kỳ nghỉ của bạn</a></h2>
                             <div class="meta mb-4">by Quốc Viễn <span class="mx-2">&bullet;</span> Dec 11, 2024 at
                                 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">Tin tức</a></div>
@@ -509,7 +508,7 @@
                     </div>
                     <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
                         <div class="h-entry">
-                            <img src="./resources/image/hero_bg_2.jpg" alt="Image" class="img-fluid">
+                            <img src="/resources/image/hero_bg_2.jpg" alt="Image" class="img-fluid">
                             <h2 class="font-size-regular"><a href="#">Cập nhật hệ thống<table></table></a></h2>
                             <div class="meta mb-4">by Phan Hoàng <span class="mx-2">&bullet;</span> Dec 11, 2024 at
                                 7:00 pm <span class="mx-2">&bullet;</span> <a href="#">Cập nhật</a></div>
@@ -534,7 +533,7 @@
                 <div class="row text-center">
                     <div class="col-md-12">
                         <h2 class="mb-5 text-black">Bạn muốn đi du lịch với chúng tôi?</h2>
-                        <p class="mb-0"><a href="./resources/views/booking.blade.php"
+                        <p class="mb-0"><a href="/resources/views/booking.blade.php"
                                 class="btn btn-primary py-3 px-5 text-white">Đặt ngay!</a></p>
                     </div>
                 </div>
@@ -562,17 +561,16 @@
                             </div>
                             <div class="col-md-6 col-lg-6">
                                 <ul class="list-unstyled">
-                                    <li><a href="index.html">Trang chủ</a></li>
-                                    <li><a href="./resources/views/destination.blade.php">Điểm đến</a></li>
-                                    <li><a href="./resources/views/discount.blade.php">Deal sốc</a></li>
-                                    <li><a href="./resources/views/blog.blade.php">Blog</a></li>
+                                    <li><a href="/resources/views/home.blade.php">Trang chủ</a></li>
+                                    <li><a href="/resources/views/destination.blade.php">Điểm đến</a></li>
+                                    <li><a href="/resources/views/blog.blade.php">Blog</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6 col-lg-6">
                                 <ul class="list-unstyled">
                                     <li><a href="#">Dịch Vụ</a></li>
-                                    <li><a href="./resources/views/about.blade.php">Giới thiệu</a></li>
-                                    <li><a href="./resources/views/contact.blade.php">Liên hệ</a></li>
+                                    <li><a href="/resources/views/about.blade.php">Giới thiệu</a></li>
+                                    <li><a href="/resources/views/contact.blade.php">Liên hệ</a></li>
                                     <li><a href="#">Bảo mật</a></li>
                                 </ul>
                             </div>
@@ -622,19 +620,19 @@
         </footer>
     </div>
 
-    <script src="./resources/js/jquery-3.3.1.min.js"></script>
-    <script src="./resources/js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="./resources/js/jquery-ui.js"></script>
-    <script src="./resources/js/popper.min.js"></script>
-    <script src="./resources/js/bootstrap.min.js"></script>
-    <script src="./resources/js/owl.carousel.min.js"></script>
-    <script src="./resources/js/jquery.stellar.min.js"></script>
-    <script src="./resources/js/jquery.countdown.min.js"></script>
-    <script src="./resources/js/jquery.magnific-popup.min.js"></script>
-    <script src="./resources/js/bootstrap-datepicker.min.js"></script>
-    <script src="./resources/js/aos.js"></script>
+    <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/resources/js/jquery-ui.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/owl.carousel.min.js"></script>
+    <script src="/resources/js/jquery.stellar.min.js"></script>
+    <script src="/resources/js/jquery.countdown.min.js"></script>
+    <script src="/resources/js/jquery.magnific-popup.min.js"></script>
+    <script src="/resources/js/bootstrap-datepicker.min.js"></script>
+    <script src="/resources/js/aos.js"></script>
 
-    <script src="./resources/js/mainhome.js"></script>
+    <script src="/resources/js/mainhome.js"></script>
 
 </body>
 

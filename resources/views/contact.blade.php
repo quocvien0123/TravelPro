@@ -47,14 +47,14 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0"><a href="/resources//resources/index.html" class="text-black h2 mb-0">TravelPro</a></h1>
+            <h1 class="mb-0"><a href="/resources/views/home.blade.php" class="text-black h2 mb-0">TravelPro</a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li>
-                  <a href="/resources//resources/index.html">Trang chủ</a>
+                  <a href="/resources/views/home.blade.php">Trang chủ</a>
                 </li>
                 <li class="has-children">
                   <a href="destination.blade.php">Điểm đến</a>
@@ -65,7 +65,6 @@
                   </ul>
                 </li>
 
-                <li><a href="discount.blade.php">Deal sốc</a></li>
                 <li><a href="about.blade.php">Giới thiệu</a></li>
                 <li><a href="blog.blade.php">Blog</a></li>
 
@@ -118,7 +117,7 @@
 
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             <h1 class="text-white font-weight-light">LIÊN HỆ</h1>
-            <div><a href="/resources//resources/index.html">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Contact</span></div>
+            <div><a href="/resources/views/home.blade.php">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Contact</span></div>
 
           </div>
         </div>
@@ -228,9 +227,8 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="/resources//resources/index.html">Trang chủ</a></li>
+                  <li><a href="/resources/views/home.blade.php">Trang chủ</a></li>
                   <li><a href="destination.blade.php">Điểm đến</a></li>
-                  <li><a href="discount.blade.php">Deal sốc</a></li>
                   <li><a href="blog.blade.php">Blog</a></li>
                 </ul>
               </div>
