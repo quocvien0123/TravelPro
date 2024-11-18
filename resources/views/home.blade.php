@@ -48,17 +48,17 @@
                 <div class="row align-items-center">
 
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0"><a href="/resources/views/home.blade.php" class="text-black h2 mb-0">TravelPro</a></h1>
+                        <h1 class="mb-0"><a href="{{ route('home') }}" class="text-black h2 mb-0">TravelPro</a></h1>
                     </div>
                     <div class="col-10 col-md-8 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
                             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                                 <li class="active">
-                                    <a href="/resources/views/home.blade.php">Trang chủ</a>
+                                    <a href="{{ route('home') }}">Trang chủ</a>
                                 </li>
                                 <li class="has-children">
-                                    <a href="/resources/views/destination.blade.php">Điểm đến</a>
+                                    <a href=""{{ route('destination') }}">Điểm đến</a>
                                     <ul class="dropdown">
                                         <li><a href="#">Miền Bắc</a></li>
                                         <li><a href="#">Miền Trung</a></li>
