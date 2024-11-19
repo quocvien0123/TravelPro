@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\BlogController;
+use App\Http\Controllers\Backend\BookingController;
 use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\DestinationController;
 use App\Http\Controllers\Backend\HomeController;
@@ -15,6 +16,7 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('/gioithieu', [AboutController::class, 'getAbout'])->name('about');
     Route::get('/baidang', [BlogController::class, 'getBlog'])->name('blog');
     Route::get('/lienhe', [ContactController::class, 'getContact'])->name('contact');
+    Route::get('/dattour', [BookingController::class, 'getBooking'])->name('booking');
 });
 
 Route::prefix('/travelpro')->group(function () {

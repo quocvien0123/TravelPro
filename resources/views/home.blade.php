@@ -122,7 +122,7 @@
                                 <p class="mb-5" style="color: aqua;">Khám phá địa điểm du lịch yêu thích của bạn với chúng
                                     tôi!
                                 </p>
-                                <p><a href="/resources/views/booking.blade.php" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
+                                <p><a href="{{ route('booking') }}" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
 
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                                 </h1>
                                 <p class="mb-5" style="color: aqua;">Bay xa,mơ lớn - Hành trình của bạn bắt đầu từ đây
                                 </p>
-                                <p><a href="/resources/views/booking.blade.php" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
+                                <p><a href="{{ route('booking') }}" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
                             </div>
                         </div>
                     </div>
@@ -533,7 +533,7 @@
                     <div class="row text-center">
                         <div class="col-md-12">
                             <h2 class="mb-5 text-black">Bạn muốn đi du lịch với chúng tôi?</h2>
-                            <p class="mb-0"><a href="/resources/views/booking.blade.php"
+                            <p class="mb-0"><a href="{{ route('booking') }}"
                                     class="btn btn-primary py-3 px-5 text-white">Đặt ngay!</a></p>
                         </div>
                     </div>
