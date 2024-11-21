@@ -190,7 +190,7 @@
               <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
 
               <p class="mb-0 font-weight-bold">Địa chỉ Email</p>
-              <p class="mb-0"><a href="#">phanhln.23it@vku.udn.vn <br> viennq@vku.udn.vn</a></p>
+              <p class="mb-0"><a href="#">phanhln.23it@vku.udn.vn <br> viennq.23it@vku.udn.vn</a></p>
 
             </div>
 
