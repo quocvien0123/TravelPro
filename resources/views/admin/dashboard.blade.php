@@ -28,10 +28,10 @@
     <link href="admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="admin/css/bootstrap.min_admin.css" rel="stylesheet">
+    <link href="admin/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="admin/css/style_admin.css" rel="stylesheet">
+    <link href="admin/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,20 +61,20 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i
+                    <a href="./dashboard.blade.php" class="nav-item nav-link active"><i
                             class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="bi bi-people-fill"></i>Decentralization</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Users</a>
-                            <a href="typography.html" class="dropdown-item">Admin</a>
+                            <a href="{{ route(name: 'user') }}" class="dropdown-item">Users</a>
+                            <a href="{{ route(name: 'quantri') }}" class="dropdown-item">Admin</a>
                         </div>
                     </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="bi bi-geo-alt-fill"></i>Destination</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="bi bi-airplane-fill"></i>Services</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="bi bi-credit-card-2-back"></i>Payments</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="bi bi-file-text-fill"></i>Blog</a>
+                    <a href="{{ route(name: 'destinationAdmin') }}" class="nav-item nav-link"><i class="bi bi-geo-alt-fill"></i>Destination</a>
+                    <a href="{{ route(name: 'servicesAdmin') }}" class="nav-item nav-link"><i class="bi bi-airplane-fill"></i>Services</a>
+                    <a href="{{ route(name: 'paymentsAdmin') }}" class="nav-item nav-link"><i class="bi bi-credit-card-2-back"></i>Payments</a>
+                    <a href="{{ route(name: 'blogAdmin') }}" class="nav-item nav-link"><i class="bi bi-file-text-fill"></i>Blog</a>
 
                 </div>
             </nav>
@@ -86,7 +86,7 @@
         <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                <a href="{{ route(name: 'admin') }}" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
@@ -478,7 +478,7 @@
     <script src="admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="admin/js/main_admin.js"></script>
+    <script src="admin/js/main.js"></script>
 </body>
 
 </html>
