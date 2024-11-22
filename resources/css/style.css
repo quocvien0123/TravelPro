@@ -323,7 +323,6 @@ input {
 }
 
 .overlay {
-    background-image: url(./image/backround_form.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;

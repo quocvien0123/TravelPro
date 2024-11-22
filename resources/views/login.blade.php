@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Travle Pro</title>
     <link rel="stylesheet" href="/resources/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
     <div class="container" id="container">
         <div class="form-container register-container">
-            <form>
+            <form action="{{route('register')}}" method="post" >
                 <h1>Đăng Ký</h1>
                 <div class="form-control">
-                    <input type="text" id="username" placeholder="Tên đăng nhập" />
+                    <input type="text" id="username" placeholder="Tên đăng nhập" name="username" required/>
                     <small id="username-error"></small>
                     <span></span>
                 </div>
                 <div class="form-control">
-                    <input type="email" id="email" placeholder="Email" />
+                    <input type="email" id="email" placeholder="Email" name="email" required/>
                     <small id="email-error"></small>
                     <span></span>
                 </div>
                 <div class="form-control">
-                    <input type="password" id="password" placeholder="Mật khẩu" />
+                    <input type="password" id="password" placeholder="Mật khẩu" name="password" required/>
                     <small id="password-error"></small>
                     <span></span>
                 </div>
@@ -42,15 +42,16 @@
         </div>
 
         <div class="form-container login-container">
-            <form class="form-lg">
+            <form class="form-lg" action="{{route('auth')}}" method="post">
+                @csrf
                 <h1>Đăng Nhập</h1>
                 <div class="form-control2">
-                    <input type="text" class="email-2" placeholder="Tên đăng nhập" />
+                    <input type="text" class="email-2" placeholder="Tên đăng nhập" name="username" required/>
                     <small class="username-error"></small>
                     <span></span>
                 </div>
                 <div class="form-control2">
-                    <input type="password" class="password-2" placeholder="Mật khẩu" />
+                    <input type="password" class="password-2" placeholder="Mật khẩu" name="password" required/>
                     <small class="password-error-2"></small>
                     <span></span>
                 </div>
@@ -104,5 +105,6 @@
     </div>
 </body>
 <script src="/resources/js/main.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </html>
