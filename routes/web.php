@@ -18,14 +18,13 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::prefix('/travelpro')->group(function () {
-    Route::get('/trangchu', [HomeController::class, 'getHome'])->name('home');
+    Route::get('/', [HomeController::class, 'getHome'])->name('home');
     Route::get('/diemden', [DestinationController::class, 'getDestination'])->name('destination');
     Route::get('/gioithieu', [AboutController::class, 'getAbout'])->name('about');
     Route::get('/baidang', [BlogController::class, 'getBlog'])->name('blog');
     Route::get('/lienhe', [ContactController::class, 'getContact'])->name('contact');
     Route::get('/dattour', [BookingController::class, 'getBooking'])->name('booking');
     Route::get('/dangnhap', [LoginController::class, 'getLogin'])->name('login');
-    Route::get('/admin', [AdminController::class, 'getAdmin'])->name('admin');
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
     Route::post('auth', [LoginController::class, 'authenticate'])->name('auth');
     Route::post('/register', [LoginController::class, 'register'])->name('register');
@@ -37,4 +36,15 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('/blog_admin', [BlogAdminController::class, 'getBlogAdmin'])->name('blogAdmin');
     Route::get('/user', [userController::class, 'getUser'])->name('user');
     Route::get('/quantri', [quantriController::class, 'getQuantri'])->name('quantri');
+});
+
+Route::prefix('/travelpro')->group(function () {
+    Route::group(['middleware' => 'auth'], function(){
+        Route::get('/trangchu', [HomeController::class, 'getHome'])->name('home');
+    
+        Route::group(['middleware' => 'admin'], function(){
+            Route::get('/admin', [AdminController::class, 'getAdmin'])->name('admin');
+        });
+        
+    });
 });

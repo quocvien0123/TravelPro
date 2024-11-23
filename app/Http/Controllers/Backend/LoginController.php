@@ -3,15 +3,11 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
-<<<<<<< HEAD
 use App\Models\User;
-=======
 use Illuminate\Support\Facades\Hash;
->>>>>>> 9fbfc751eaf8de63733e10682172e17ee6f5a0f6
 
 class LoginController extends Controller
 {
@@ -39,10 +35,7 @@ class LoginController extends Controller
         return redirect()->route('login');
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 9fbfc751eaf8de63733e10682172e17ee6f5a0f6
     public function logout(Request $request): RedirectResponse
     {
         Auth::logout();
@@ -54,9 +47,6 @@ class LoginController extends Controller
         return redirect()->route('login');
     }
 
-<<<<<<< HEAD
-    public function register(Request $request) {}
-=======
     public function register(Request $request)
     {
 
@@ -83,12 +73,11 @@ class LoginController extends Controller
 
 
             // Redirect or respond
-            toastr('success', 'Tạo tài khoản thành công!');
+            toastr()->success('Tạo tài khoản thành công!');
             return redirect()->route('login');
         } catch (\Exception $e) {
             toastr()->error('Có lỗi xảy ra, vui lòng thử lại!');
             return redirect()->back()->withInput();
         }
     }
->>>>>>> 9fbfc751eaf8de63733e10682172e17ee6f5a0f6
 }
