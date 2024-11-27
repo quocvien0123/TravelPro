@@ -16,10 +16,25 @@ class Authenticate
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $user = Auth::user();
-        if (!$user->is_admin) {
-            return redirect()->route('home');
+        // Kiểm tra nếu người dùng chưa đăng nhập
+        if (!Auth::check()) {
+            toastr()->error("Bạn phải đăng nhập!");
+            return redirect()->route('login'); // Chuyển hướng đến trang đăng nhập
         }
-        return $next($request);
+
+        $user = Auth::user();
+
+        // Kiểm tra nếu người dùng là admin
+        if ($user->is_admin) {
+            if ($request->route()->getName() !== 'admin') {
+                return redirect()->route('admin'); // Chuyển hướng đến trang admin nếu không phải là route admin
+            }
+        } else {
+            if ($request->route()->getName() !== 'home') {
+                return redirect()->route('home'); // Chuyển hướng đến trang home nếu không phải là route home
+            }
+        }
+
+        return $next($request); // Tiếp tục xử lý request
     }
 }

@@ -13,6 +13,9 @@ class LoginController extends Controller
 {
     public function getLogin()
     {
+        if (Auth::id() > 0 ) {
+            return redirect()->route("home");
+        }
         return view('login');
     }
 
