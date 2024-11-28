@@ -195,7 +195,7 @@
                                         <td>{{$user->id}}</td>
                                         <td>{{$user->username}}</td>
                                         <td>{{$user->email}}</td>
-                                        <td style="padding-left: 15%;">
+                                        <td style="text-align: right;">
                                             <a href="{{route('addAdmin', $user->id)}}">
                                                 <button type="button" class="btn btn-square btn-outline-primary m-2" title="Cấp quyền quản trị"><i class="bi bi-person-fill-lock"></i></button>
                                             </a>
