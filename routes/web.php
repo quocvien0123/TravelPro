@@ -14,6 +14,7 @@ use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\DestinationController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\LoginController;
+use App\Http\Controllers\PasswordController;
 use App\Http\Middleware\Authenticate;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,11 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
     Route::post('auth', [LoginController::class, 'authenticate'])->name('auth');
     Route::post('/register', [LoginController::class, 'register'])->name('register');
+
+    Route::get('password/forgot', [PasswordController::class, 'showForgotForm'])->name('password.forgot');
+    Route::post('password/forgot', [PasswordController::class, 'sendResetLink'])->name('password.sendResetLink');
+    Route::get('password/reset/{token}', [PasswordController::class, 'showResetForm'])->name('password.reset');
+    Route::post('password/reset', [PasswordController::class, 'resetPassword'])->name('password.update');
 });
 Route::prefix('/travelpro')->group(function () {
     Route::get('/diemden_admin', [DestinationAdminController::class, 'getDestinationAdmin'])->name('destinationAdmin');
@@ -40,12 +46,11 @@ Route::prefix('/travelpro')->group(function () {
 });
 
 Route::prefix('/travelpro')->group(function () {
-    Route::group(['middleware' => 'admin'], function(){
+    Route::group(['middleware' => 'admin'], function () {
         Route::get('/trangchu', [HomeController::class, 'getHome'])->name('home');
-    
-        Route::group(['middleware' => 'admin'], function(){
+
+        Route::group(['middleware' => 'admin'], function () {
             Route::get('/admin', [AdminController::class, 'getAdmin'])->name('admin');
         });
-        
     });
 });
