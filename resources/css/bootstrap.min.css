@@ -91,6 +91,7 @@ hr {
     overflow: visible;
 }
 
+
 h1,
 h2,
 h3,
@@ -6925,7 +6926,9 @@ button.bg-dark:hover {
 .rounded-circle {
     border-radius: 50% !important;
 }
-
+.me-lg-2 {
+        margin-right: 0.5rem !important;
+    }
 .rounded-0 {
     border-radius: 0 !important;
 }

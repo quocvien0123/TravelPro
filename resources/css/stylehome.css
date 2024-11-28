@@ -21,6 +21,10 @@ li a{
     font-size: 1.1rem;
 }
 
+.li_nav{
+    margin-top: 3%;
+}
+
 a {
     -webkit-transition: 0.3s all ease;
     -o-transition: 0.3s all ease;

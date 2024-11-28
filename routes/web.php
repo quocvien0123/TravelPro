@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::prefix('/travelpro')->group(function () {
-    Route::get('/', [HomeController::class, 'getHome'])->name('home');
+    // Route::get('/', [HomeController::class, 'getHome'])->name('home');
     Route::get('/diemden', [DestinationController::class, 'getDestination'])->name('destination');
     Route::get('/gioithieu', [AboutController::class, 'getAbout'])->name('about');
     Route::get('/baidang', [BlogController::class, 'getBlog'])->name('blog');
