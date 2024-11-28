@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="./dashboard.blade.php" class="nav-item nav-link active"><i
+                    <a href="{{ route(name: 'admin') }}" class="nav-item nav-link active"><i
                             class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">

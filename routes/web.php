@@ -43,6 +43,8 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('/blog_admin', [BlogAdminController::class, 'getBlogAdmin'])->name('blogAdmin');
     Route::get('/user', [userController::class, 'getUser'])->name('user');
     Route::get('/quantri', [quantriController::class, 'getQuantri'])->name('quantri');
+    Route::get('/user/{id}/add_admin', [userController::class, 'addAdmin'])->name('addAdmin');
+    Route::get('/user/{id}/delete', [userController::class, 'deleteUser'])->name('deleteUser');
 });
 
 Route::prefix('/travelpro')->group(function () {
