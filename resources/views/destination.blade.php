@@ -131,14 +131,10 @@
           <div class="row">
             @foreach ($destinations as $destination)
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <a href="{{ route('booking.show', ['id' => $destination->id]) }}" class="unit-1 text-center">
-                <img src="{{ $destination->image_url }}" alt="{{ $destination->name }}" class="img-fluid">
-              </a>
-
-
-              <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }}</strong>
-                <h3 class="unit-1-heading">{{ $destination->location }}</h3>
-              </div>
+              <a href="{{ route('booking.show',$destination->id) }}" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid">
+                <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }}</strong>
+                  <h3 class="unit-1-heading">{{ $destination->location }}</h3>
+                </div>
               </a>
             </div>
             @endforeach
