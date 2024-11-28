@@ -121,7 +121,7 @@
                                 <p class="mb-5" style="color: aqua;">Khám phá địa điểm du lịch yêu thích của bạn với chúng
                                     tôi!
                                 </p>
-                                <p><a href="{{ route('booking') }}" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
+                                <p><a href="{{ route('destination') }}" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
 
                             </div>
                         </div>
@@ -325,7 +325,7 @@
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                                 <a href="#" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid">
                                     <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }}</strong>
-                                        <h3 class="unit-1-heading">{{ $destination->location }}</h3>
+                                        <h3 class="unit-1-heading">{{ $destination->name }}, {{ $destination->location }} </h3>
                                     </div>
                                 </a>
                             </div>

@@ -44,12 +44,12 @@
     <header class="site-navbar py-1" role="banner">
 
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center" style="width: 1300px;">
 
           <div class="col-6 col-xl-2">
             <h1 class="mb-0"><a href="{{ route('home') }}" class="text-black h2 mb-0">TravelPro</a></h1>
           </div>
-          <div class="col-10 col-md-8 d-none d-xl-block">
+          <div class="col-6 col-xl-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
@@ -59,7 +59,7 @@
                 <li class="has-children">
                   <a href="{{ route('destination') }}">Điểm đến</a>
                   <ul class="dropdown">
-                    <li><a href="#">Miền Bắc </a></li>
+                    <li><a href="#">Miền Bắc</a></li>
                     <li><a href="#">Miền Trung</a></li>
                     <li><a href="#">Miền Nam</a></li>
                   </ul>
@@ -68,17 +68,7 @@
                 <li><a href="{{ route('about') }}">Giới thiệu</a></li>
                 <li><a href="{{ route('blog') }}">Blog</a></li>
 
-                <li><a href="{{ route('contact') }}">Liên hệ</a></li>
-                <!-- <li><a href="booking.html">Book Online</a></li> -->
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col-6 col-xl-2 text-right">
-            <div class="d-none d-xl-inline-block">
-              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0"
-                data-class="social">
-
+                <li><a href="{{ route('contact') }}">Liên hệ </a></li>
                 <li>
                   <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
                 </li>
@@ -91,16 +81,24 @@
                 <li>
                   <a href="http://zaloapp.com/qr/p/18ae9qdynewf3" class="pl-3 pr-3 text-black"><span class="icon-phone"></span></a>
                 </li>
+                <li class="has-children">
+                  <a href=""><img class="rounded-circle me-lg-2" src="/resources/admin/img/user.jpg" alt="" style="width: 40px; height: 40px; margin-left: 60px;"> </a>
+                  <ul class="dropdown">
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Seting</a></li>
+                    <li><a href="{{route('logout')}}">Log Out</a></li>
+                  </ul>
 
+                </li>
               </ul>
-            </div>
-
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
-              style="position: relative; top: 3px;"><a href="#"
-                class="site-menu-toggle js-menu-toggle text-black"><span
-                  class="icon-menu h3"></span></a></div>
-
+            </nav>
           </div>
+
+          <!-- <div class="col-6 col-xl-2 text-right">
+      
+
+  </div> -->
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"> <a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a> </div>
 
         </div>
       </div>
@@ -138,24 +136,21 @@
 
 
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Họ</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Họ">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Tên</label>
-                  <input type="text" id="lname" class="form-control" placeholder="Tên">
+                <div class="col-md-12">
+                  <label class="text-black" for="date" style="padding-left: 250px;">
+                    <h2>{{ $destination->name }}</h2>
+                  </label>
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="date">Ngày của chuyến đi</label>
-                  <input type="text" id="date" class="form-control datepicker px-2" placeholder="Ngày của chuyến đi">
+                  <label class="text-black" for="date">Ngày bắt đầu</label>
+                  <input type="text" id="date" class="form-control datepicker px-2" placeholder="Ngày bắt đầu của chuyến đi">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email">
+                  <label class="text-black" for="email">Ngày kết thúc</label>
+                  <input type="text" id="date" class="form-control datepicker px-2" placeholder="Ngày kết thúc của chuyến đi">
                 </div>
               </div>
 
@@ -172,16 +167,7 @@
                 </div>
               </div>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="treatment">Điểm đến</label>
-                  <select name="treatment" id="treatment" class="form-control">
-                    <option value="">Miền Bắc</option>
-                    <option value="">Miền Trung</option>
-                    <option value="">Miền Nam</option>
-                  </select>
-                </div>
-              </div>
+
 
               <div class="row form-group">
                 <div class="col-md-12">
@@ -189,10 +175,17 @@
                   <textarea name="note" id="note" cols="30" rows="5" class="form-control" placeholder="Viết ghi chú của bạn vào đây..."></textarea>
                 </div>
               </div>
-
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Gửi" class="btn btn-primary py-2 px-4 text-white">
+                  <label class="text-black" for="treatment">
+                    <h2>Giá: {{ $destination->price }} $</h2>
+                  </label>
+
+                </div>
+              </div>
+              <div class="row form-group">
+                <div style="padding-left: 250px; ">
+                  <input type="submit" value="Đặt" class="btn btn-primary py-2 px-4 text-white" style="width: 100px;">
                 </div>
               </div>
 
@@ -205,9 +198,31 @@
 
             <div class="p-4 mb-3 bg-white">
               <img src="/resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid mb-4 rounded">
-              <h3 class="h5 text-black mb-3">Thông tin thêm</h3>
-              <p></p>
-              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Tìm hiểu thêm</a></p>
+              @if(isset($destination))
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Điểm đến: {{ $destination->location }}</h3>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Ngày đặt: {{ $current_date }}</h3>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Mô tả: {{ $destination->description }}</h3>
+                  </label>
+                  @else
+                  <p>Thông tin điểm đến không khả dụng.</p>
+                  @endif
+
+                </div>
+
+                <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Tìm hiểu thêm</a></p>
+              </div>
+
             </div>
 
           </div>

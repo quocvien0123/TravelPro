@@ -43,7 +43,13 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('/blog_admin', [BlogAdminController::class, 'getBlogAdmin'])->name('blogAdmin');
     Route::get('/user', [userController::class, 'getUser'])->name('user');
     Route::get('/quantri', [quantriController::class, 'getQuantri'])->name('quantri');
+
+
+    Route::get('/booking/{id}', [BookingController::class, 'show'])->name('booking.show');
 });
+
+
+
 
 Route::prefix('/travelpro')->group(function () {
     Route::group(['middleware' => 'admin'], function () {
