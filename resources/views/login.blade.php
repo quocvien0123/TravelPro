@@ -63,7 +63,7 @@
                         <label for="">Ghi nhớ</label>
                     </div>
                     <div class="pass-link">
-                        <a href="#">Quên mật khẩu?</a>
+                        <a href="{{ route('password.forgot') }}">Quên mật khẩu?</a>
                     </div>
                 </div>
                 <button type="submit" value="submit">Đăng Nhập</button>
@@ -117,7 +117,7 @@
         @endforeach
     </div>
     @endif
-
+    </div>
 </body>
 <script src="/resources/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
