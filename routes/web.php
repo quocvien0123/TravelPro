@@ -14,6 +14,7 @@ use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\DestinationController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\LoginController;
+use App\Http\Controllers\PasswordController;
 use App\Http\Middleware\Authenticate;
 use Illuminate\Support\Facades\Route;
 
