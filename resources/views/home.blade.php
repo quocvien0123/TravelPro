@@ -10,6 +10,7 @@
             href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
         <link rel="stylesheet" href="/resources/fonts/icomoon/style.css">
 
+        <link rel="stylesheet" href="/resources/css/dropdow_admin.css">
         <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
         <link rel="stylesheet" href="/resources/css/magnific-popup.css">
         <link rel="stylesheet" href="/resources/css/jquery-ui.css">
@@ -45,12 +46,12 @@
             <header class="site-navbar py-1" role="banner">
 
                 <div class="container">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" style="width: 1300px;">
 
                         <div class="col-6 col-xl-2">
                             <h1 class="mb-0"><a href="{{ route('home') }}" class="text-black h2 mb-0">TravelPro</a></h1>
                         </div>
-                        <div class="col-10 col-md-8 d-none d-xl-block">
+                        <div class="col-6 col-xl-10 d-none d-xl-block">
                             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
                                 <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
@@ -70,40 +71,35 @@
                                     <li><a href="{{ route('blog') }}">Blog</a></li>
 
                                     <li><a href="{{ route('contact') }}">Liên hệ </a></li>
-                                    <!-- <li><a href="booking.html">Book Online</a></li> -->
+                                    <li>
+                                        <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pl-3 pr-3 text-black"><span class="icon-google"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://zaloapp.com/qr/p/18ae9qdynewf3" class="pl-3 pr-3 text-black"><span class="icon-phone"></span></a>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href=""><img class="rounded-circle me-lg-2" src="/resources/admin/img/user.jpg" alt="" style="width: 40px; height: 40px; margin-left: 60px;"> </a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">My Profile</a></li>
+                                            <li><a href="#">Seting</a></li>
+                                            <li><a href="{{route('logout')}}">Log Out</a></li>
+                                        </ul>
+
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
 
-                        <div class="col-6 col-xl-2 text-right">
-                            <div class="d-none d-xl-inline-block">
-                                <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0"
-                                    data-class="social">
+                        <!-- <div class="col-6 col-xl-2 text-right">
+                            
 
-                                    <li class="li_nav">
-                                        <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
-                                    </li>
-                                    <li class="li_nav">
-                                        <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
-                                    </li>
-                                    <li class="li_nav">
-                                        <a href="#" class="pl-3 pr-3 text-black"><span class="icon-google"></span></a>
-                                    </li>
-                                    <li class="li_nav">
-                                        <a href="http://zaloapp.com/qr/p/18ae9qdynewf3" class="pl-3 pr-3 text-black"><span class="icon-phone"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href=""><img class="rounded-circle me-lg-2" src="/resources/admin/img/user.jpg" alt="" style="width: 40px; height: 40px;" </a>
-                                        
-                                    </li>
-                                    <li style="width: 100px; margin-top: 2%;">
-                                        <a href="">John Doe</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
+                        </div> -->
                         <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"> <a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a> </div>
 
                     </div>
