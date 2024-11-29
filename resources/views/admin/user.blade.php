@@ -66,8 +66,8 @@
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
                             <i class="bi bi-people-fill"></i>Decentralization</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route(name: 'user') }}" class="dropdown-item">Users</a>
-                            <a href="{{ route(name: 'quantri') }}" class="dropdown-item">Admin</a>
+                            <a href="{{ route(name: 'user') }}" class="dropdown-item"><i class="bi bi-person-fill"></i> Users</a>
+                            <a href="{{ route(name: 'quantri') }}" class="dropdown-item"><i class="bi bi-person-fill-gear"></i> Admin</a>
                         </div>
                     </div>
                     <a href="{{ route(name: 'destinationAdmin') }}" class="nav-item nav-link"><i class="bi bi-geo-alt-fill"></i>Destination</a>
@@ -197,7 +197,7 @@
                                         <td>{{$user->email}}</td>
                                         <td style="text-align: right;">
                                             <a href="{{route('addAdmin', $user->id)}}">
-                                                <button type="button" class="btn btn-square btn-outline-primary m-2" title="Cấp quyền quản trị"><i class="bi bi-person-fill-lock"></i></button>
+                                                <button type="button" class="btn btn-square btn-outline-primary m-2" title="Cấp quyền quản trị"><i class="bi bi-person-fill-gear"></i></i></button>
                                             </a>
                                             <a href="{{route('deleteUser',$user->id)}}">
                                                 <button type="button" class="btn btn-square btn-outline-danger m-2" title="Xóa tài khoản"><i class="bi bi-trash3-fill"></i></i></button>
@@ -235,7 +235,6 @@
     <script src="admin/lib/tempusdominus/js/moment.min.js"></script>
     <script src="admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
     <!-- Template Javascript -->
     <script src="admin/js/main.js"></script>
 </body>

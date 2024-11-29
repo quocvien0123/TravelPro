@@ -18,7 +18,7 @@ class userController extends Controller
     {
         $user = User::findOrFail($id);
         $user->delete();
-        toastr()->success('Đã xóa tài khoản của ' . $user->username . '.');
+        toastr()->success('Đã xóa tài khoản ' . $user->username . '.');
         return redirect()->back();
     }
 

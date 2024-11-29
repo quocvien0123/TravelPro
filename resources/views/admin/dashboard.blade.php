@@ -67,8 +67,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="bi bi-people-fill"></i>Decentralization</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route(name: 'user') }}" class="dropdown-item">Users</a>
-                            <a href="{{ route(name: 'quantri') }}" class="dropdown-item">Admin</a>
+                            <a href="{{ route(name: 'user') }}" class="dropdown-item"><i class="bi bi-person-fill"></i> Users</a>
+                            <a href="{{ route(name: 'quantri') }}" class="dropdown-item"><i class="bi bi-person-fill-gear"></i> Admin</a>
                         </div>
                     </div>
                     <a href="{{ route(name: 'destinationAdmin') }}" class="nav-item nav-link"><i class="bi bi-geo-alt-fill"></i>Destination</a>

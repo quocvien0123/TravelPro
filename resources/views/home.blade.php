@@ -9,6 +9,8 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
         <link rel="stylesheet" href="/resources/fonts/icomoon/style.css">
+        <link href="/resources/admin/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/resources/admin/css/style.css" rel="stylesheet">
 
         <link rel="stylesheet" href="/resources/css/dropdow_admin.css">
         <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
@@ -28,9 +30,19 @@
 
         <link rel="stylesheet" href="/resources/css/stylehome.css">
 
+
     </head>
 
     <body>
+         <!-- Spinner Start -->
+         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
 
         <div class="site-wrap">
 
@@ -585,8 +597,8 @@
         <script src="/resources/js/jquery.magnific-popup.min.js"></script>
         <script src="/resources/js/bootstrap-datepicker.min.js"></script>
         <script src="/resources/js/aos.js"></script>
-
         <script src="/resources/js/mainhome.js"></script>
+        <script src="/resources/admin/js/main.js"></script>
 
     </body>
 
