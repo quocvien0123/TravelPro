@@ -46,7 +46,11 @@ Route::prefix('/travelpro')->group(function () {
 
 
     Route::get('/booking/{id}', [BookingController::class, 'show'])->name('booking.show');
+    Route::post('/booking', [BookingController::class, 'store'])->name('booking.store'); // Lưu dữ liệu
+
+
     Route::get('/user/{id}/add_admin', [userController::class, 'addAdmin'])->name('addAdmin');
+
     Route::get('/user/{id}/remove_admin', [quantriController::class, 'removeAdmin'])->name('removeAdmin');
     Route::get('/user/{id}/delete', [userController::class, 'deleteUser'])->name('deleteUser');
 });
