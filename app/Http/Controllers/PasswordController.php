@@ -64,27 +64,30 @@ class PasswordController extends Controller
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
-
             $mail->setFrom(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
             $mail->addAddress($email);
             $mail->CharSet = 'UTF-8';
-            $mail->Subject = 'Đặt lại mật khẩu tài khoản của bạn';
-
-
+            $mail->Subject = 'Đặt lại mật khẩu của bạn';
 
             $resetLink = route('password.reset', ['token' => $token]);
 
-            $mail->isHTML(true);
-            $mail->Body = "<p>Nhấp vào liên kết để tiến hành đặt lại mật khẩu của bạn:</p><a href='$resetLink'>$resetLink</a>";
 
+            $body = view('emails.reset_password', [
+                'resetLink' => $resetLink,
+
+            ])->render();
+
+            $mail->isHTML(true);
+            $mail->Body = $body;
 
             $mail->send();
             return true;
         } catch (Exception $e) {
-            dd(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+            Log::error("Email sending failed: {$e->getMessage()}");
             return false;
         }
     }
+
     public function showResetForm($token)
     {
         return view('auth.passwords.reset', ['token' => $token]);
