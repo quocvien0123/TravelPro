@@ -64,6 +64,8 @@ class PasswordController extends Controller
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
+            
+
             $mail->setFrom(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
             $mail->addAddress($email);
             $mail->CharSet = 'UTF-8';
