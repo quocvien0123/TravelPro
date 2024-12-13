@@ -34,8 +34,8 @@
     </head>
 
     <body>
-         <!-- Spinner Start -->
-         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -151,7 +151,7 @@
                                 </h1>
                                 <p class="mb-5" style="color: aqua;">Bay xa,mơ lớn - Hành trình của bạn bắt đầu từ đây
                                 </p>
-                                <p><a href="{{ route('booking') }}" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
+                                <p><a href="{{ route('destination') }}" class="btn btn-primary py-3 px-5 text-white">Đặt Ngay!</a></p>
                             </div>
                         </div>
                     </div>

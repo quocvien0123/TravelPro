@@ -134,19 +134,7 @@
 
             <form action="{{ route('booking.store') }}" method="POST" class="p-5 bg-white">
               @csrf
-
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="destination_id">Chọn điểm đến</label>
-                  <select name="destination_id" id="destination_id" class="form-control" required>
-                    @foreach($destinations as $diemden)
-                    <option value="{{ $diemden->id }}">{{ $diemden->name }}</option>
-                    @endforeach
-                  </select>
-                </div>
-              </div>
-
+              <input type="hidden" name="destination_id" value="{{ $destination->id }}">
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="date">Ngày bắt đầu</label>
@@ -188,9 +176,8 @@
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="treatment">
-                    <h2>Giá: {{ $destination->price }} $</h2>
+                    <h2>Giá tour: {{ $destination->price }} $</h2>
                   </label>
-
                 </div>
               </div>
               <div class="row form-group">
@@ -198,8 +185,6 @@
                   <input type="submit" value="Đặt" class="btn btn-primary py-2 px-4 text-white" style="width: 100px;">
                 </div>
               </div>
-
-
             </form>
           </div>
           <div class="col-md-5">
@@ -216,8 +201,6 @@
                     <h3 class="h5 text-black mb-3" style="margin-left: 20px;">Tên tour: {{ $destination->name }}</h3>
                   </label>
                 </div>
-
-
               </div>
               <div class="col-md-12">
                 <label class="text-black" for="treatment">
@@ -231,20 +214,14 @@
                 @else
                 <p>Thông tin điểm đến không khả dụng.</p>
                 @endif
-
               </div>
-
               <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Tìm hiểu thêm</a></p>
             </div>
-
           </div>
-
         </div>
       </div>
     </div>
   </div>
-
-
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -255,9 +232,6 @@
               lựa các gói tour chi tiết và tận hưởng kỳ nghỉ mà không cần bận tâm về lịch trình.
               Với TravelPro, chỉ cần đặt chỗ và sẵn sàng cho những trải nghiệm thú vị!</p>
           </div>
-
-
-
         </div>
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="row mb-5">
@@ -280,21 +254,14 @@
               </ul>
             </div>
           </div>
-
-
-
         </div>
-
         <div class="col-lg-4 mb-5 mb-lg-0">
-
-
           <div class="mb-5">
             <h3 class="footer-heading mb-2">Đăng ký nhận bảng tin</h3>
             <p>
               Đăng ký nhận bản tin từ TravelPro để cập nhật nhanh nhất về các gói tour mới,
               ưu đãi đặc biệt và mẹo du lịch hữu ích – giúp bạn không bỏ lỡ cơ hội khám phá tuyệt vời!
             </p>
-
             <form action="#" method="post">
               <div class="input-group mb-3">
                 <input type="text" class="form-control border-secondary text-white bg-transparent"
@@ -306,11 +273,8 @@
                 </div>
               </div>
             </form>
-
           </div>
-
         </div>
-
       </div>
       <div class="row pt-5 mt-5 text-center">
         <div class="col-md-12">
@@ -319,13 +283,10 @@
             <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
             <a href="#" class="pl-3 pr-3"><span class="icon-google"></span></a>
             <a href="#" class="pl-3 pr-3"><span class="icon-phone"></span></a>
-
           </div>
         </div>
   </footer>
   </div>
-
-
   <script src="/resources/js/jquery-3.3.1.min.js"></script>
   <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="/resources/js/jquery-ui.js"></script>
@@ -337,9 +298,7 @@
   <script src="/resources/js/jquery.magnific-popup.min.js"></script>
   <script src="/resources/js/bootstrap-datepicker.min.js"></script>
   <script src="/resources/js/aos.js"></script>
-
   <script src="/resources/js/mainhome.js"></script>
-
 </body>
 
 </html>

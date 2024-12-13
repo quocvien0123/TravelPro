@@ -39,13 +39,15 @@ class PasswordController extends Controller
 
             // Gửi email
             if (!$this->sendResetEmail($request->email, $token)) {
-                return back()->withErrors(['email' => 'Gửi email thất bại. Vui lòng thử lại sau.']);
+                // return back()->withErrors(['email' => 'Gửi email thất bại. Vui lòng thử lại sau.']);
+                toastr()->error("Gửi Email thất bại! Vui lòng thử lại");
+                return back();
             }
-
-            return back()->with('status', 'Đã gửi email reset mật khẩu.');
+            toastr()->success("Đã gửi email reset mật khẩu.");
+            return back();
         }
-
-        return back()->withErrors(['email' => 'Email không tồn tại.']);
+        toastr()->error("Email không tồn tại!");
+        return back();
     }
 
 
@@ -94,13 +96,11 @@ class PasswordController extends Controller
     }
     public function resetPassword(Request $request)
     {
-        // Validate dữ liệu từ form
-        $request->validate([
-            'email' => 'required|email',
-            'password' => 'required|confirmed',
-            'token' => 'required',
-        ]);
 
+        if ($request->password !== $request->password_confirmation) {
+            toastr()->error('Mật khẩu và xác nhận mật khẩu không khớp!');
+            return redirect()->back();
+        }
         // Kiểm tra token có hợp lệ không
         $reset = DB::table('password_resets')->where([
             'email' => $request->email,
@@ -108,7 +108,8 @@ class PasswordController extends Controller
         ])->first();
 
         if (!$reset) {
-            return back()->withErrors(['email' => 'Email nhập không chính xác']);
+            toastr()->error("Email nhập không chính xác!");
+            return back();
         }
 
         // Cập nhật mật khẩu người dùng
@@ -116,13 +117,11 @@ class PasswordController extends Controller
         if (!$user) {
             return back()->withErrors(['email' => 'Email không tồn tại.']);
         }
-
-
         $user->update(['password' => bcrypt($request->password)]);
 
         // Xóa thông tin token đã được sử dụng
-        DB::table('password_resets')->where(['email' => $request->email])->delete();
-
-        return redirect()->route('login')->with('status', 'Mật khẩu của bạn đã được cập nhật lại.');
+        DB::table('password_resets')->where(column: ['email' => $request->email])->delete();
+        toastr()->success("Mật khẩu của bạn đã được cập nhật lại!");
+        return redirect()->route('login');
     }
 }
