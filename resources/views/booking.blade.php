@@ -162,6 +162,7 @@
                 <div class="col-md-12">
                   <label class="text-black" for="service">Chọn dịch vụ</label>
                   <select name="service_id" id="service" class="form-control" required>
+                    <option value=""></option>
                     @foreach($services as $service)
                     <option value="{{ $service->id }}">{{ $service->name }}</option>
                     @endforeach
