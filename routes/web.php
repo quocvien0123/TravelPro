@@ -43,7 +43,6 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('/successPayment', [CheckoutController::class, 'showSuccess'])->name("success");
     Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink'])->name("checkOutPayment");
     Route::get('back', [CheckoutController::class, 'back'])->name("back");
-
 });
 Route::prefix('/travelpro')->group(function () {
     Route::get('/diemden_admin', [DestinationAdminController::class, 'getDestinationAdmin'])->name('destinationAdmin');
@@ -60,8 +59,17 @@ Route::prefix('/travelpro')->group(function () {
 
     Route::get('/user/{id}/add_admin', [userController::class, 'addAdmin'])->name('addAdmin');
 
-    Route::delete('/user/{id}/remove_admin', [quantriController::class, 'removeAdmin'])->name('removeAdmin');
-    Route::delete('/user/{id}/delete', [userController::class, 'deleteUser'])->name('deleteUser');
+    Route::GET('/user/{id}/remove_admin', [quantriController::class, 'removeAdmin'])->name('removeAdmin');
+    Route::GET('/user/{id}/delete', [userController::class, 'deleteUser'])->name('deleteUser');
+
+
+
+    Route::post('/destination_admin/create', [DestinationAdminController::class, 'createDestination'])->name('createDestination');
+    Route::get('/destination_admin/add', [DestinationAdminController::class, 'showAddForm'])->name('addDestination');
+
+    Route::GET('/destination_admin/{id}/delete', [DestinationAdminController::class, 'deleteDestination'])->name('deleteDestination');
+    Route::get('/destination_admin/{id}/edit', [DestinationAdminController::class, 'editDestination'])->name('editDestination');
+    Route::put('/destination_admin/{id}/update', [DestinationAdminController::class, 'updateDestination'])->name('updateDestination');
 });
 
 

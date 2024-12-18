@@ -213,10 +213,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Button End -->
-
-
-            </footer>
         </div>
         <!-- Content End -->
 
