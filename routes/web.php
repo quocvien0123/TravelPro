@@ -14,7 +14,10 @@ use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\DestinationController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\LoginController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PasswordController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Middleware\Authenticate;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +38,12 @@ Route::prefix('/travelpro')->group(function () {
     Route::post('password/forgot', [PasswordController::class, 'sendResetLink'])->name('password.sendResetLink');
     Route::get('password/reset/{token}', [PasswordController::class, 'showResetForm'])->name('password.reset');
     Route::post('password/reset', [PasswordController::class, 'resetPassword'])->name('password.update');
+    Route::get('/checkout', [CheckoutController::class, 'showCheckOut'])->name("checkOut");
+    Route::get('/cancelPayment', [CheckoutController::class, 'showCancel'])->name("cancel");
+    Route::get('/successPayment', [CheckoutController::class, 'showSuccess'])->name("success");
+    Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink'])->name("checkOutPayment");
+    Route::get('back', [CheckoutController::class, 'back'])->name("back");
+
 });
 Route::prefix('/travelpro')->group(function () {
     Route::get('/diemden_admin', [DestinationAdminController::class, 'getDestinationAdmin'])->name('destinationAdmin');
@@ -51,8 +60,8 @@ Route::prefix('/travelpro')->group(function () {
 
     Route::get('/user/{id}/add_admin', [userController::class, 'addAdmin'])->name('addAdmin');
 
-    Route::get('/user/{id}/remove_admin', [quantriController::class, 'removeAdmin'])->name('removeAdmin');
-    Route::get('/user/{id}/delete', [userController::class, 'deleteUser'])->name('deleteUser');
+    Route::delete('/user/{id}/remove_admin', [quantriController::class, 'removeAdmin'])->name('removeAdmin');
+    Route::delete('/user/{id}/delete', [userController::class, 'deleteUser'])->name('deleteUser');
 });
 
 
@@ -66,4 +75,15 @@ Route::prefix('/travelpro')->group(function () {
             Route::get('/admin', [AdminController::class, 'getAdmin'])->name('admin');
         });
     });
+});
+
+
+Route::prefix('/order')->group(function () {
+    Route::post('/create', [OrderController::class, 'createOrder']);
+    Route::get('/{id}', [OrderController::class, 'getPaymentLinkInfoOfOrder']);
+    Route::put('/{id}', [OrderController::class, 'cancelPaymentLinkOfOrder']);
+});
+
+Route::prefix('/payment')->group(function () {
+    Route::post('/payos', [PaymentController::class, 'handlePayOSWebhook']);
 });

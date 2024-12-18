@@ -182,13 +182,16 @@
 
             <div class="p-4 mb-3 bg-white">
               <p class="mb-0 font-weight-bold">Địa chỉ</p>
-              <p class="mb-4"> <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+Th%C3%B4ng+tin+v%C3%A0+Truy%E1%BB%81n+th%C3%B4ng+Vi%E1%BB%87t+-+H%C3%A0n,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+%C4%90%C3%A0+N%E1%BA%B5ng/@15.9752603,108.2513388,17z/data=!4m14!1m7!3m6!1s0x3142108997dc971f:0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4sIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!8m2!3d15.9752603!4d108.253227!16s%2Fg%2F1yjg80dyy!3m5!1s0x3142108997dc971f:0x1295cb3d313469c9!8m2!3d15.9752603!4d108.253227!16s%2Fg%2F1yjg80dyy?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D">Trường Đại học Công nghệ thông tin và Truyền Thông Việt - Hàn</a></p>
+              <p class="mb-0"> <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+Th%C3%B4ng+tin+v%C3%A0+Truy%E1%BB%81n+th%C3%B4ng+Vi%E1%BB%87t+-+H%C3%A0n,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+%C4%90%C3%A0+N%E1%BA%B5ng/@15.9752603,108.2513388,17z/data=!4m14!1m7!3m6!1s0x3142108997dc971f:0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4sIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!8m2!3d15.9752603!4d108.253227!16s%2Fg%2F1yjg80dyy!3m5!1s0x3142108997dc971f:0x1295cb3d313469c9!8m2!3d15.9752603!4d108.253227!16s%2Fg%2F1yjg80dyy?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D">Trường Đại học Công nghệ thông tin và Truyền Thông Việt - Hàn</a></p>
 
               <p class="mb-0 font-weight-bold">Số điện thoại</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+              <p class="mb-0"><a href="#">0339752308</a></p>
+              <p class="mb-0"><a href="#">0857001468</a></p>
 
               <p class="mb-0 font-weight-bold">Địa chỉ Email</p>
-              <p class="mb-0"><a href="#">phanhln.23it@vku.udn.vn <br> viennq.23it@vku.udn.vn</a></p>
+              <p class="mb-0"><a href="mailto:phanhln.23it@vku.udn.vn">phanhln.23it@vku.udn.vn</p>
+              <p class="mb-0"><a href="mailto:viennq.23it@vku.udn.vn">viennq.23it@vku.udn.vn</p>
+
 
             </div>
 

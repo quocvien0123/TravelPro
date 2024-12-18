@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+}
+a:hover{
+    color: #45a049;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.icon_success {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    animation: scaleUp 0.5s ease-out;
+}
+
+.icon_cancel {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    animation: scaleUp 0.5s ease-out;
+}
+
+.icon_success::before {
+    content: '✓';
+    font-size: 48px;
+    color: white;
+}
+
+.icon_cancel::before {
+    content: '✕';
+    font-size: 48px;
+    color: white;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.countdown {
+    font-weight: bold;
+    color: #4CAF50;
+}

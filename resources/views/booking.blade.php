@@ -114,7 +114,7 @@
         <div class="row align-items-center justify-content-center text-center">
 
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="text-white font-weight-light">ĐẶT MỘT TOUR</h1>
+            <h1 class="text-white font-weight-light">ĐẶT TOUR</h1>
             <div><a href="/resources/views/home.blade.php">Trang chủ</a> <span class="mx-2 text-white">&bullet;
               </span> <span class="text-white">Đặt Tour</span></div>
 
@@ -132,7 +132,7 @@
 
 
 
-            <form action="{{ route('booking.store') }}" method="POST" class="p-5 bg-white">
+            <form action="{{route('checkOutPayment',$destination->id)}}" method="post" class="p-5 bg-white">
               @csrf
               <input type="hidden" name="destination_id" value="{{ $destination->id }}">
               <div class="row form-group">
@@ -182,7 +182,7 @@
               </div>
               <div class="row form-group">
                 <div style="padding-left: 250px; ">
-                  <input type="submit" value="Đặt" class="btn btn-primary py-2 px-4 text-white" style="width: 100px;">
+                  <input type="submit" value="Thanh toán" class="btn btn-primary text-white" style="margin-right: 10px;">
                 </div>
               </div>
             </form>
