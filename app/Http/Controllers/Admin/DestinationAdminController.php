@@ -25,28 +25,33 @@ class DestinationAdminController extends Controller
         // Lấy dữ liệu từ request
         $name = $request->input('name');
         $description = $request->input('description');
-        $image_url = $request->input('image_url');
+        $imagePath = $imagePath ?? $request->input('image_url'); // Nếu không có ảnh tải lên, giữ giá trị từ form
         $location = $request->input('location');
         $price = $request->input('price');
 
+        // Kiểm tra nếu có ảnh được tải lên
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '-' . $image->getClientOriginalName();
+            $image->move(resource_path('image'), $imageName);
+            $imagePath = 'image/' . $imageName;
+        } else {
+            $imagePath = null;
+        }
         // Cập nhật dữ liệu cho điểm đến
         Destination::create([
             'name' => $name,
             'description' => $description,
-            'image_url' => $image_url,
+            'image_url' => $imagePath,
             'location' => $location,
             'price' => $price
         ]);
         toastr()->success("Đã thêm thành công!");
-        // Điều hướng đến trang quản trị điểm đến với thông báo thành công
         return redirect()->route('destinationAdmin');
     }
     public function editDestination($id)
     {
-        // Tìm điểm đến theo ID
         $destination = Destination::findOrFail($id);
-
-        // Trả về view edit với điểm đến hiện tại
         return view('admin.destination.edit', compact('destination'));
     }
 
@@ -54,21 +59,33 @@ class DestinationAdminController extends Controller
     {
         $destination = Destination::findOrFail($id);
 
-        // Lấy dữ liệu từ request
-        $data = $request->only([
-            'name',
-            'description',
-            'image_url',
-            'location',
-            'price',
-        ]);
+
+        $name = $request->input('name');
+        $description = $request->input('description');
+        $location = $request->input('location');
+        $price = $request->input('price');
+        $imagePath = $destination->image_url;  // Giữ giá trị ảnh cũ nếu không có ảnh mới
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '-' . $image->getClientOriginalName();
+            $image->move(resource_path('image'), $imageName);
+            $imagePath = 'image/' . $imageName;  // Cập nhật đường dẫn ảnh mới
+        }
 
         // Cập nhật dữ liệu cho điểm đến
-        $destination->update($data);
-        toastr()->success("Đã cập nhật điểm đến !");
-        // Điều hướng đến trang quản trị điểm đến với thông báo thành công
+        $destination->update([
+            'name' => $name,
+            'description' => $description,
+            'image_url' => $imagePath,  // Cập nhật ảnh mới nếu có
+            'location' => $location,
+            'price' => $price
+        ]);
+
+        toastr()->success("Đã cập nhật điểm đến!");
         return redirect()->route('destinationAdmin');
     }
+
 
 
     public function deleteDestination($id)

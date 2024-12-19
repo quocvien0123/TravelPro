@@ -103,7 +103,7 @@
                                         <td>{{$destination->id}}</td>
                                         <td>{{$destination->name}}</td>
                                         <td>{{$destination->location}}</td>
-                                        <td><img src="{{$destination->image_url}}" alt="" style="width:80px; height:50px"></td>
+                                        <td><img src="{{($destination->image_url) }}" alt="" style="width:80px; height:50px"></td>
                                         <td>{{$destination->description}}</td>
                                         <td style="text-align: center;">
                                             <a href=" {{route('editDestination', $destination->id)}}">

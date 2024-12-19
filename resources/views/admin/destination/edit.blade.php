@@ -80,7 +80,7 @@
 
         #imagePreview {
             max-width: 150px;
-            height: 150px;
+            height: 130px;
             margin-top: 10px;
             border-radius: 4px;
             display: none;
@@ -101,9 +101,10 @@
             <input type="text" id="location" name="location" value="{{ $destination->location}}" required>
 
             <label for="image">Image:</label>
-            <input type="file" id="image" name="image" value="{{$destination->image_url }}" accept="image/*">
-            <img src="{{ asset($destination->image_url) }}" alt="Image" />
+            <input type="file" id="image" name="image" accept="image/*">
 
+            <!-- Hiển thị ảnh cũ -->
+            <img id="imagePreview" src="{{ asset($destination->image_url) }}" alt="Image" style="display: block;" />
 
             <label for="description">Description:</label>
             <textarea id="description" name="description" required>{{$destination->description }}</textarea>
@@ -125,13 +126,14 @@
 
                 reader.onload = function(e) {
                     imagePreview.src = e.target.result;
-                    imagePreview.style.display = 'block';
+                    imagePreview.style.display = 'block'; // Hiển thị ảnh mới khi được chọn
                 }
 
                 reader.readAsDataURL(file);
             } else {
-                imagePreview.src = '#';
-                imagePreview.style.display = 'none';
+                // Nếu không chọn ảnh mới, hiển thị ảnh cũ
+                imagePreview.src = "{{ asset($destination->image_url) }}";
+                imagePreview.style.display = 'block'; // Giữ ảnh cũ
             }
         });
     </script>
