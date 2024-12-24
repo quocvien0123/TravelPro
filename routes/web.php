@@ -19,6 +19,7 @@ use App\Http\Controllers\LienheController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\TransactionController;
 use App\Http\Middleware\Authenticate;
 use Illuminate\Support\Facades\Route;
 
@@ -82,6 +83,8 @@ Route::prefix('/travelpro')->group(function () {
 
 
     Route::get('/admin/services/delete/{id}', [ServicesAdminController::class, 'deleteService'])->name('deleteService');
+
+    Route::get('/thanhtoan_admin', [AdminController::class, 'paymentsAdmin'])->name('paymentsAdmin');
 });
 
 

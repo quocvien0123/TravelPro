@@ -38,10 +38,8 @@ class BookingController extends Controller
 
     public function createBookingForm()
     {
-        // Lấy tất cả dịch vụ từ bảng services
-        $services = Service::all();
 
-        // Trả về view cùng với dữ liệu dịch vụ
+        $services = Service::all();
         return view('home', compact('services'));
     }
 }

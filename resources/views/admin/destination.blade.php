@@ -170,6 +170,8 @@
                                         <th scope="col">Location</th>
                                         <th scope="col">Image</th>
                                         <th scope="col">Description</th>
+                                        <th scope="col">Quanttity</th>
+                                        <th scope="col">Status</th>
                                         <th scope="col" style="text-align: center;"> <a href="{{ route('addDestination') }}"><button type="button" class="btn btn-outline-success">Add</button>
                                             </a></th>
                                     </tr>
@@ -182,6 +184,8 @@
                                         <td>{{$destination->location}}</td>
                                         <td><img src="{{($destination->image_url) }}" alt="" style="width:80px; height:50px"></td>
                                         <td>{{$destination->description}}</td>
+                                        <td>{{$destination->quantity}}</td>
+                                        <td>{{$destination->status}}</td>
                                         <td style="text-align: center;">
                                             <a href=" {{route('editDestination', $destination->id)}}">
                                                 <button type="button" class="btn btn-square btn-outline-warning m-2" title="Edit"><i class="bi bi-pencil-fill"></i></button>
