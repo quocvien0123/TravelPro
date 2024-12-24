@@ -10,7 +10,8 @@ class DestinationController extends Controller
 {
     function getDestination()
     {
+
         $destinations = Destination::paginate(6);
-        return view("destination" , compact("destinations"));
+        return view("destination", compact("destinations"));
     }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Travalers &mdash; Colorlib Website Template</title>
+  <title>TravelPro</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
