@@ -70,6 +70,17 @@ Route::prefix('/travelpro')->group(function () {
     Route::GET('/destination_admin/{id}/delete', [DestinationAdminController::class, 'deleteDestination'])->name('deleteDestination');
     Route::get('/destination_admin/{id}/edit', [DestinationAdminController::class, 'editDestination'])->name('editDestination');
     Route::put('/destination_admin/{id}/update', [DestinationAdminController::class, 'updateDestination'])->name('updateDestination');
+
+
+
+    Route::get('/admin/services/add', [ServicesAdminController::class, 'addServiceForm'])->name('addService');
+    Route::post('/admin/services/add', [ServicesAdminController::class, 'addService'])->name('storeService');
+
+    Route::get('/admin/services/edit/{id}', [ServicesAdminController::class, 'editService'])->name('editService');
+    Route::put('/admin/services/update/{id}', [ServicesAdminController::class, 'updateService'])->name('updateService');
+
+
+    Route::get('/admin/services/delete/{id}', [ServicesAdminController::class, 'deleteService'])->name('deleteService');
 });
 
 
