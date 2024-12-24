@@ -15,6 +15,7 @@ use App\Http\Controllers\Backend\DestinationController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\LoginController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\LienheController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\PaymentController;

@@ -127,50 +127,50 @@
             <div class="h-entry">
               <img src="/resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <div class="meta mb-4">by TravelPPro <span class="mx-2">&bullet;</span> {{ now()->format('M d, Y \a\t h:i A') }} <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Vịnh Hạ Long, nằm ở phía Bắc Việt Nam, được UNESCO công nhận là di sản thiên nhiên thế giới. Với hơn 1.600 hòn đảo đá vôi lớn nhỏ, vịnh Hạ Long là một trong những cảnh quan thiên nhiên tuyệt đẹp, thu hút du khách trong và ngoài nước. Đây là một điểm đến không thể bỏ qua nếu bạn yêu thích khám phá vẻ đẹp kỳ vĩ của thiên nhiên.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="/resources/image/hero_bg_2.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/img_pq.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="/resources/image/hero_bg_2.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="/resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <div class="meta mb-4">by TravelPro <span class="mx-2">&bullet;</span> {{ now()->format('M d, Y \a\t h:i A') }} <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Phú Quốc, hòn đảo lớn nhất Việt Nam, nằm ở phía Tây Nam của Tổ quốc, được mệnh danh là "Thiên Đường Biển Cả" nhờ vẻ đẹp hoang sơ, bãi biển dài trắng mịn và các khu nghỉ dưỡng cao cấp. Đây là điểm đến lý tưởng cho những ai muốn tránh xa sự ồn ào, tận hưởng không khí trong lành và thư giãn tuyệt đối. Đặc biệt, Phú Quốc còn nổi bật với các hoạt động vui chơi, giải trí phong phú và cảnh quan thiên nhiên tuyệt đẹp.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="/resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/hero_bg_2.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <div class="meta mb-4">by TravelPro <span class="mx-2">&bullet;</span> {{ now()->format('M d, Y \a\t h:i A') }}<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Phong Nha - Kẻ Bàng, một trong những kỳ quan thiên nhiên tuyệt vời của Việt Nam, nằm tại tỉnh Quảng Bình, được UNESCO công nhận là Di sản Thiên nhiên Thế giới. Nơi đây nổi tiếng với hệ thống hang động phong phú, những cánh rừng nguyên sinh rộng lớn và cảnh quan thiên nhiên hùng vĩ. Nếu bạn yêu thích khám phá thiên nhiên và muốn trải nghiệm những điều kỳ diệu của mẹ thiên nhiên, Phong Nha - Kẻ Bàng chắc chắn là điểm đến không thể bỏ qua.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
             <div class="h-entry">
-              <img src="/resources/image/hero_bg_2.jpg" alt="Image" class="img-fluid">
+              <img src="/resources/image/img_bd.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-              <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+              <div class="meta mb-4">by TravelPro <span class="mx-2">&bullet;</span>{{ now()->format('M d, Y \a\t h:i A') }}<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Bản Đôn, nằm ở huyện Buôn Đôn, tỉnh Đắk Lắk, là một trong những điểm đến không thể bỏ qua đối với những ai yêu thích khám phá văn hóa dân tộc và tìm hiểu về truyền thống nuôi voi độc đáo của người Tây Nguyên. Nơi đây không chỉ nổi bật với những câu chuyện về những chú voi huyền thoại mà còn có những cảnh quan thiên nhiên tươi đẹp, các ngôi nhà sàn truyền thống, và những nét văn hóa đặc sắc mà bạn khó có thể tìm thấy ở bất kỳ nơi nào khác.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="/resources/image/violac.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
+              <div class="meta mb-4">by TravelPro <span class="mx-2">&bullet;</span> {{ now()->format('M d, Y \a\t h:i A') }} <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Quảng Ngãi là một tỉnh miền Trung, Việt Nam, nơi hội tụ những giá trị văn hóa đặc sắc và thiên nhiên hùng vĩ. Nơi đây nổi bật với những ngôi làng dân tộc truyền thống, cảnh quan thiên nhiên hoang sơ và những di tích lịch sử đậm đà bản sắc. Nếu bạn yêu thích sự bình yên và khám phá vẻ đẹp tiềm ẩn của thiên nhiên, Quảng Ngãi là điểm đến lý tưởng.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="/resources/image/vanmieu.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
+              <div class="meta mb-4">by TravelPro <span class="mx-2">&bullet;</span> {{ now()->format('M d, Y \a\t h:i A') }} <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              <p>Văn Miếu - Quốc Tử Giám, tọa lạc tại trung tâm Hà Nội, là một trong những di tích lịch sử, văn hóa quan trọng và nổi tiếng nhất của Việt Nam. Được xây dựng vào năm 1070 dưới triều đại Lý, Văn Miếu không chỉ là nơi thờ Khổng Tử, mà còn là trung tâm giáo dục đầu tiên của đất nước, nơi đào tạo những nhân tài cho đất nước qua các thế hệ.</p>
             </div>
           </div>
 
@@ -239,7 +239,7 @@
                   <input type="text" class="form-control border-secondary text-white bg-transparent"
                     placeholder="Nhập Email" aria-label="Enter Email"
                     aria-describedby="button-addon2">
-                  <div class="input-group-append">
+                  <div style="padding-top: 7px;" class="input-group-append">
                     <button class="btn btn-primary text-white" type="button"
                       id="button-addon2">Gửi</button>
                   </div>

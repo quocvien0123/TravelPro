@@ -321,7 +321,7 @@
                   <input type="text" class="form-control border-secondary text-white bg-transparent"
                     placeholder="Nhập Email" aria-label="Enter Email"
                     aria-describedby="button-addon2">
-                  <div class="input-group-append">
+                  <div style="padding-top: 7px;" class="input-group-append">
                     <button class="btn btn-primary text-white" type="button"
                       id="button-addon2">Gửi</button>
                   </div>
