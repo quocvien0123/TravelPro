@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="/resources/fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/resources/css/aos.css">
 
@@ -66,13 +68,8 @@
                   <li>
                     <a href="{{ route('home') }}">Trang chủ</a>
                   </li>
-                  <li class="has-children active">
+                  <li class="active">
                     <a href="{{ route('destination') }}">Điểm đến</a>
-                    <ul class="dropdown">
-                      <li><a href="#">Miền Bắc</a></li>
-                      <li><a href="#">Miền Trung</a></li>
-                      <li><a href="#">Miền Nam</a></li>
-                    </ul>
                   </li>
 
                   <li><a href="{{ route('about') }}">Giới thiệu</a></li>
@@ -134,15 +131,22 @@
 
 
 
-
       <div class="site-section">
-
         <div class="container">
+          <div style="padding-bottom: 20px;">
+            <form action="">
+              <input type="text" placeholder="Nhập để tìm kiếm" name="searchs" />
+              <button type="submit" class="btn btn-outline-dark" style="max-width: 40px;border: none;">
+                <i class="bi bi-search "></i>
+              </button>
+            </form>
+
+          </div>
           <div class="row">
             @foreach ($destinations as $destination)
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <a href="{{ route('booking.show',$destination->id) }}" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid">
-                <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }}</strong>
+              <a href="{{ route('booking.show',$destination->id) }}" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid" style="height: 400px; width: 350px;">
+                <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }} {{$destination->status}}/{{$destination->quantity}}</strong>
                   <h3 class="unit-1-heading">{{ $destination->location }}</h3>
                 </div>
               </a>

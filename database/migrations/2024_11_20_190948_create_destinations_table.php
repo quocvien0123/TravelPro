@@ -17,7 +17,9 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('image_url', 255)->nullable();
             $table->string('location', 255);
+            $table->integer('quantity');
             $table->decimal('price', 10, 2);
+            $table->boolean('status')->default(true); // Pending by default
             $table->timestamps();
         });
         

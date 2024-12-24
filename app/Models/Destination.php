@@ -14,11 +14,13 @@ class Destination extends Model
         'description',
         'image_url',
         'location',
+        'quantity',
+        'status',
         'price',
     ];
 
     public function bookings()
     {
-        return $this->hasMany(Booking::class);
+        return $this->hasMany(Transaction::class);
     }
 }

@@ -57,13 +57,8 @@
                 <li>
                   <a href="{{ route('home') }}">Trang chủ</a>
                 </li>
-                <li class="has-children">
+                <li>
                   <a href="{{ route('destination') }}">Điểm đến</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Miền Bắc</a></li>
-                    <li><a href="#">Miền Trung</a></li>
-                    <li><a href="#">Miền Nam</a></li>
-                  </ul>
                 </li>
 
                 <li class="active"><a href="{{ route('about') }}">Giới thiệu</a></li>

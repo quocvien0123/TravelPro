@@ -108,9 +108,11 @@
 
             <label for="description">Description:</label>
             <textarea id="description" name="description" required>{{$destination->description }}</textarea>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="{{$destination->status}}" min="1"  required>
 
             <label for="price">Price:</label>
-            <input type="number" id="price" name="price" value="{{ $destination->price }}" required>
+            <input type="number" id="price" name="price" value="{{ $destination->price }}" min="1"   required>
 
             <input type="submit" value="Update Destination">
         </form>

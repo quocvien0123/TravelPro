@@ -70,13 +70,8 @@
                                     <li class="active">
                                         <a href="{{ route('home') }}">Trang chủ</a>
                                     </li>
-                                    <li class="has-children">
+                                    <li>
                                         <a href="{{ route('destination') }}">Điểm đến</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Miền Bắc</a></li>
-                                            <li><a href="#">Miền Trung</a></li>
-                                            <li><a href="#">Miền Nam</a></li>
-                                        </ul>
                                     </li>
 
                                     <li><a href="{{ route('about') }}">Giới thiệu</a></li>
@@ -335,7 +330,7 @@
                         <div class="row">
                             @foreach ($destinations as $destination)
                             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                                <a href="#" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid">
+                                <a href="#" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid" style="height: 400px; width: 350px;">
                                     <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }}</strong>
                                         <h3 class="unit-1-heading">{{ $destination->name }}, {{ $destination->location }} </h3>
                                     </div>

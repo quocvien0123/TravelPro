@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bookings', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')
                 ->onDelete('CASCADE')
                 ->onUpdate('CASCADE');
-            $table->foreignId('service_id')->constrained('services')
+            $table->foreignId('service_id')->nullable()->constrained('services')
                 ->onDelete('CASCADE')
                 ->onUpdate('CASCADE');
             $table->foreignId('destination_id')->nullable()->constrained('destinations')
@@ -27,10 +27,13 @@ return new class extends Migration
             $table->date('end_date');
             $table->integer('number_of_people');
             $table->decimal('total_price', 10, 2);
-            $table->boolean('status')->default(false); // Pending by default
+            $table->string('code')->nullable(); // Mã code
+            $table->string('transaction_id')->nullable(); // Mã giao dịch
+            $table->string('order_code')->nullable(); // Mã đơn hàng
+            $table->decimal('amount_paid', 10, 2);
+            $table->string('status')->nullable(); // Trạng thái thanh toán
             $table->timestamps();
         });
-        
     }
 
     /**
@@ -38,6 +41,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bookings');
+        Schema::dropIfExists('transaction');
     }
 };

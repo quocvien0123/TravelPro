@@ -91,7 +91,7 @@
 <body>
     <div class="container">
         <h2>Add Destinations</h2>
-        <form action="{{ route('createDestination') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('createDestination') }}" method="POST" enctype="multipart/form-data" >
             @csrf
             @method('POST')
             <label for="name">Name:</label>
@@ -106,9 +106,10 @@
 
             <label for="description">Description:</label>
             <textarea id="description" name="description" required></textarea>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
             <label for="price">Price:</label>
-            <input type="number" id="location" name="price" required>
-
+            <input type="number" id="location" name="price" min="1" required>
             <input type="submit" value="Add Destination ">
         </form>
     </div>

@@ -56,13 +56,8 @@
                 <li>
                   <a href="{{ route('home') }}">Trang chủ</a>
                 </li>
-                <li class="has-children">
+                <li>
                   <a href="{{ route('destination') }}">Điểm đến</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Miền Bắc</a></li>
-                    <li><a href="#">Miền Trung</a></li>
-                    <li><a href="#">Miền Nam</a></li>
-                  </ul>
                 </li>
 
                 <li><a href="{{ route('about') }}">Giới thiệu</a></li>
@@ -117,7 +112,6 @@
             <h1 class="text-white font-weight-light">ĐẶT TOUR</h1>
             <div><a href="/resources/views/home.blade.php">Trang chủ</a> <span class="mx-2 text-white">&bullet;
               </span> <span class="text-white">Đặt Tour</span></div>
-
           </div>
         </div>
       </div>
@@ -129,10 +123,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 mb-5">
-
-
-
-            <form action="{{route('checkOutPayment',$destination->id)}}" method="post" class="p-5 bg-white">
+            <form action="{{route('checkOutPayment')}}" method="post" class="p-5 bg-white">
               @csrf
               <input type="hidden" name="destination_id" value="{{ $destination->id }}">
               <div class="row form-group">
@@ -143,14 +134,14 @@
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="email">Ngày kết thúc</label>
-                  <input type="date" id="end_date" name="end_date" placeholder="Ngày kết thúc" required>
+                  <input type="date" id=" end_date" name="end_date" placeholder="Ngày kết thúc" required>
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="service">Chọn dịch vụ</label>
-                  <select name="service_id" id="service" class="form-control" required>
-                    <option value=""></option>
+                  <select name="service_id" id="service" class="form-control">
+                    <option value="">(Không)</option>
                     @foreach($services as $service)
                     <option value="{{ $service->id }}">{{ $service->name }}</option>
                     @endforeach
@@ -160,7 +151,7 @@
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="treatment">Có bao nhiêu người</label>
-                  <input type="number" id="number_of_people" name="number_of_people" value="{{ old('number_of_people') }}" min="1" required>
+                  <input type="number" id="number_of_people" name="number_of_people" value="{{ old('number_of_people') }}" min="1" max="{{$destination->status}}" required>
                   </select>
                 </div>
               </div>
@@ -192,100 +183,109 @@
 
 
             <div class="p-4 mb-3 bg-white">
-              <img src="/resources/image/hero_bg_1.jpg" alt="Image" class="img-fluid mb-4 rounded">
               @if(isset($destination))
+              <img src="{{$destination->image_url}}" alt="Image" class="img-fluid mb-4 rounded">
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="treatment">
-                    <h3 class="h5 text-black mb-3" style="margin-left: 20px;">Điểm đến: {{ $destination->location }}</h3>
-                    <h3 class="h5 text-black mb-3" style="margin-left: 20px;">Tên tour: {{ $destination->name }}</h3>
+                    <h3 class="h5 text-black mb-3">Điểm đến: {{ $destination->location }}</h3>
+                    <h3 class="h5 text-black mb-3">Tên tour: {{ $destination->name }}</h3>
+                  </label>
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Ngày đặt: {{ date('d/m/Y')}}</h3>
                   </label>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <label class="text-black" for="treatment">
-                  <h3 class="h5 text-black mb-3">Ngày đặt: {{ $current_date }}</h3>
-                </label>
-              </div>
-              <div class="col-md-12">
-                <label class="text-black" for="treatment">
-                  <h3 class="h5 text-black mb-3">Mô tả: {{ $destination->description }}</h3>
-                </label>
-                @else
-                <p>Thông tin điểm đến không khả dụng.</p>
+                <div class="col-md-12">
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Số lượng: </h3>
+                  </label>
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-primary mb-3">{{$destination->quantity}} </h3>
+                  </label>
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Còn: </h3>
+                  </label>
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-primary mb-3">{{$destination->status}}</h3>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <label class="text-black" for="treatment">
+                    <h3 class="h5 text-black mb-3">Mô tả: {{ $destination->description }}</h3>
+                  </label>
+                </div>
                 @endif
+                <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Tìm hiểu thêm</a></p>
               </div>
-              <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Tìm hiểu thêm</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="mb-5">
-            <h3 class="footer-heading mb-4">Về TravePro</h3>
-            <p>TravelPro là nền tảng đặt tour du lịch trọn gói, giúp khách hàng dễ dàng chọn
-              lựa các gói tour chi tiết và tận hưởng kỳ nghỉ mà không cần bận tâm về lịch trình.
-              Với TravelPro, chỉ cần đặt chỗ và sẵn sàng cho những trải nghiệm thú vị!</p>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="row mb-5">
-            <div class="col-md-12">
-              <h3 class="footer-heading mb-4">Điều hướng</h3>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <ul class="list-unstyled">
-                <li><a href="{{ route('home') }}">Trang chủ</a></li>
-                <li><a href="{{ route('destination') }}">Điểm đến</a></li>
-                <li><a href="{{ route('blog') }}">Blog</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <ul class="list-unstyled">
-                <li><a href="#">Dịch Vụ</a></li>
-                <li><a href="about.blade.php">Giới thiệu</a></li>
-                <li><a href="contact.blade.php">Liên hệ</a></li>
-                <li><a href="#">Bảo mật</a></li>
-              </ul>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4">Về TravePro</h3>
+              <p>TravelPro là nền tảng đặt tour du lịch trọn gói, giúp khách hàng dễ dàng chọn
+                lựa các gói tour chi tiết và tận hưởng kỳ nghỉ mà không cần bận tâm về lịch trình.
+                Với TravelPro, chỉ cần đặt chỗ và sẵn sàng cho những trải nghiệm thú vị!</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="mb-5">
-            <h3 class="footer-heading mb-2">Đăng ký nhận bảng tin</h3>
-            <p>
-              Đăng ký nhận bản tin từ TravelPro để cập nhật nhanh nhất về các gói tour mới,
-              ưu đãi đặc biệt và mẹo du lịch hữu ích – giúp bạn không bỏ lỡ cơ hội khám phá tuyệt vời!
-            </p>
-            <form action="#" method="post">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent"
-                  placeholder="Nhập Email" aria-label="Enter Email"
-                  aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-white" type="button"
-                    id="button-addon2">Gửi</button>
-                </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Điều hướng</h3>
               </div>
-            </form>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                  <li><a href="{{ route('home') }}">Trang chủ</a></li>
+                  <li><a href="{{ route('destination') }}">Điểm đến</a></li>
+                  <li><a href="{{ route('blog') }}">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                  <li><a href="#">Dịch Vụ</a></li>
+                  <li><a href="about.blade.php">Giới thiệu</a></li>
+                  <li><a href="contact.blade.php">Liên hệ</a></li>
+                  <li><a href="#">Bảo mật</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-2">Đăng ký nhận bảng tin</h3>
+              <p>
+                Đăng ký nhận bản tin từ TravelPro để cập nhật nhanh nhất về các gói tour mới,
+                ưu đãi đặc biệt và mẹo du lịch hữu ích – giúp bạn không bỏ lỡ cơ hội khám phá tuyệt vời!
+              </p>
+              <form action="#" method="post">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent"
+                    placeholder="Nhập Email" aria-label="Enter Email"
+                    aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary text-white" type="button"
+                      id="button-addon2">Gửi</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row pt-5 mt-5 text-center">
-        <div class="col-md-12">
-          <div class="mb-5">
-            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-google"></span></a>
-            <a href="#" class="pl-3 pr-3"><span class="icon-phone"></span></a>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="mb-5">
+              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-google"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-phone"></span></a>
+            </div>
           </div>
-        </div>
-  </footer>
+    </footer>
   </div>
   <script src="/resources/js/jquery-3.3.1.min.js"></script>
   <script src="/resources/js/jquery-migrate-3.0.1.min.js"></script>

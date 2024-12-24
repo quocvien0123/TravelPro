@@ -158,6 +158,56 @@ h5,
     box-shadow: none !important;
 }
 
+.form-control2 {
+    width: 100%;
+    position: relative;
+}
+
+.form-control2 span {
+    position: absolute;
+    border-bottom: 3px solid #2691d9;
+    left: 0;
+    bottom: 8px;
+    width: 0%;
+    transition: all 0.3s ease;
+}
+
+input{
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    padding: 12px 0px;
+    margin: 8px 0;
+    width: 95%;
+}
+
+.form-control2 input:focus~span {
+    width: 100%;
+}
+
+.form-control2 small {
+    color: red;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 12px;
+    z-index: 100;
+}
+
+.form-control2 span {
+    position: absolute;
+    border-bottom: 3px solid #2691d9;
+    left: 0;
+    bottom: 8px;
+    width: 0%;
+    transition: all 0.3s ease;
+}
+
+.form-control2 input:focus~span {
+    width: 100%;
+}
+
 .site-section {
     padding: 2.5em 0;
 }

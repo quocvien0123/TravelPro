@@ -21,36 +21,27 @@ class DestinationAdminController extends Controller
     public function createDestination(Request $request)
     {
 
+        $file = $request->file('image');
+        $fileName = $file->getClientOriginalName();
 
-        // Lấy dữ liệu từ request
-        $name = $request->input('name');
-        $description = $request->input('description');
-        $imagePath = $imagePath ?? $request->input('image_url'); // Nếu không có ảnh tải lên, giữ giá trị từ form
-        $location = $request->input('location');
-        $price = $request->input('price');
+        // Lưu file vào thư mục resources/image
+        $filePath = $file->move(resource_path('image'), $fileName);
 
-        // Kiểm tra nếu có ảnh được tải lên
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imageName = time() . '-' . $image->getClientOriginalName();
-            $image->move(resource_path('image'), $imageName);
-            $imagePath = 'image/' . $imageName;
-        } else {
-            $imagePath = null;
-        }
-        // Cập nhật dữ liệu cho điểm đến
         Destination::create([
-            'name' => $name,
-            'description' => $description,
-            'image_url' => $imagePath,
-            'location' => $location,
-            'price' => $price
+            'name' => $request->input('name'),
+            'description' => $request->input('description'),
+            'image_url' => ('/resources/image/'. $fileName),
+            'location' => $request->input('location'),
+            'quantity' => $request->input('quantity'),
+            'status' => $request->input('quantity'),
+            'price' => $request->input('price')
         ]);
         toastr()->success("Đã thêm thành công!");
         return redirect()->route('destinationAdmin');
     }
-    public function editDestination($id)
+    public function editDestination(Request $request,$id)
     {
+
         $destination = Destination::findOrFail($id);
         return view('admin.destination.edit', compact('destination'));
     }
@@ -65,6 +56,7 @@ class DestinationAdminController extends Controller
         $location = $request->input('location');
         $price = $request->input('price');
         $imagePath = $destination->image_url;  // Giữ giá trị ảnh cũ nếu không có ảnh mới
+        $quantity = $request->input('quantity');
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
@@ -73,12 +65,17 @@ class DestinationAdminController extends Controller
             $imagePath = 'image/' . $imageName;  // Cập nhật đường dẫn ảnh mới
         }
 
+        // if ($destination->status <) {
+        //     # code...
+        // }
+
         // Cập nhật dữ liệu cho điểm đến
         $destination->update([
             'name' => $name,
             'description' => $description,
             'image_url' => $imagePath,  // Cập nhật ảnh mới nếu có
             'location' => $location,
+            'quantity' => $quantity,
             'price' => $price
         ]);
 
