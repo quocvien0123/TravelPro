@@ -57,7 +57,6 @@
 
         <div class="container">
           <div class="row align-items-center" style="width: 1300px;">
-
             <div class="col-6 col-xl-2">
               <h1 class="mb-0"><a href="{{ route('home') }}" class="text-black h2 mb-0">TravelPro</a></h1>
             </div>
@@ -119,7 +118,6 @@
       <div class="site-blocks-cover inner-page-cover" style="background-image: url(/resources/image/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
-
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h1 class="text-white font-weight-light">Điểm Đến</h1>
               <div><a href="/resources/views/home.blade.php">Trang chủ</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Điểm đến</span></div>
@@ -134,20 +132,21 @@
       <div class="site-section">
         <div class="container">
           <div style="padding-bottom: 20px;">
-            <form action="">
-              <input type="text" placeholder="Nhập để tìm kiếm" name="searchs" />
+            <form action="{{route('search')}}" method="post">
+              @method('POST')
+              @csrf
+              <input type="text" placeholder="Nhập để tìm kiếm" name="search" value="{{ $query}}"/>
               <button type="submit" class="btn btn-outline-dark" style="max-width: 40px;border: none;">
                 <i class="bi bi-search "></i>
               </button>
             </form>
-
           </div>
           <div class="row">
             @foreach ($destinations as $destination)
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
               <a href="{{ route('booking.show',$destination->id) }}" class="unit-1 text-center"> <img src="{{ $destination->image_url }}" alt="Image" class="img-fluid" style="height: 400px; width: 350px;">
                 <div class="unit-1-text"> <strong class="text-primary mb-2 d-block">${{ $destination->price }} {{$destination->status}}/{{$destination->quantity}}</strong>
-                  <h3 class="unit-1-heading">{{ $destination->location }}</h3>
+                  <h3 class="unit-1-heading">{{ $destination->name }}</h3>
                 </div>
               </a>
             </div>

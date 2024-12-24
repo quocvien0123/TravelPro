@@ -7,7 +7,12 @@ use App\Models\Destination;
 use App\Models\Payment;
 use App\Models\Service;
 use App\Models\Transaction;
+use App\Models\User;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use PHPMailer\PHPMailer\PHPMailer;
 
 class CheckoutController extends Controller
 {
@@ -52,53 +57,42 @@ class CheckoutController extends Controller
             'note' => session('note'),
         ]);
         $destination->update([
-            'status' => $destination->status - session('number_of_people') ,
+            'status' => $destination->status - session('number_of_people'),
         ]);
+        
+        try {
+            $mail = new PHPMailer(true);
 
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = env('MAIL_USERNAME');
+            $mail->Password = env('MAIL_PASSWORD');
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Port = 465;
 
+            $user = User::find(session("user_id"));
+            $transaction = Transaction::where('order_code', '=', $orderCode)->first();
+
+            $mail->setFrom(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+            $mail->addAddress($user->email);
+            $mail->CharSet = 'UTF-8';
+            $mail->Subject = 'Thông tin đặt vé';
+
+            
+            $body = view('emails.bookingInformation', compact('user', 'destination', 'transaction'));
+            $mail->isHTML(true);
+            $mail->Body = $body;
+
+            $mail->send();
+        } catch (Exception $e) {
+            Log::error("Email sending failed: {$e->getMessage()}");
+        }
         return view("cancel");
     }
 
     public function showSuccess(Request $request)
     {
-        $transactionId = $request->input('transactionId');
-        $status = $request->input('status');
-        $code = $request->query('code');
-        $transactionId = $request->query('id');
-        $status = $request->query('status');
-        $orderCode = $request->query('orderCode');
-
-        $destination = Destination::find(session('destination_id'));
-        $service = Service::find(session('service_id'));
-
-        $totalPrice = $destination->price * session('number_of_people'); // Giá tour cho số người
-
-        // Kiểm tra nếu có dịch vụ thì tính thêm
-        if ($service) {
-            $totalPrice += $service->price * session('number_of_people'); // Cộng giá dịch vụ
-        }
-
-        Transaction::create([
-            'user_id' => session('user_id'),
-            'service_id' => session('service_id'),
-            'destination_id' => session('destination_id'),
-            'booking_date' => session('booking_date'),
-            'start_date' => session('start_date'),
-            'end_date' => session('end_date'),
-            'number_of_people' => session('number_of_people'),
-            'total_price' => $totalPrice,
-            'code' => $code,
-            'transaction_id' => $transactionId,
-            'order_code' => $orderCode,
-            'status' => $status,
-            'amount_paid' => $totalPrice,
-            'note' => session('note'),
-        ]);
-        $status = $destination->quantity - session('number_of_people');
-        $destination->update([
-            'status' => $status,
-        ]);
-
         return view("success");
     }
 

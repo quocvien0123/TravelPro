@@ -76,6 +76,7 @@ class DestinationAdminController extends Controller
             'image_url' => $imagePath,  // Cập nhật ảnh mới nếu có
             'location' => $location,
             'quantity' => $quantity,
+            'status' => $quantity,
             'price' => $price
         ]);
 

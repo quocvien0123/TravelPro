@@ -42,7 +42,7 @@ Route::prefix('/travelpro')->group(function () {
     Route::get('/cancelPayment', [CheckoutController::class, 'showCancel'])->name("cancel");
     Route::get('/successPayment', [CheckoutController::class, 'showSuccess'])->name("success");
     Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink'])->name("checkOutPayment");
-    Route::get('back', [CheckoutController::class, 'back'])->name("back");
+    Route::post('/search', [DestinationController::class, 'search'])->name("search");
 });
 Route::prefix('/travelpro')->group(function () {
     Route::get('/diemden_admin', [DestinationAdminController::class, 'getDestinationAdmin'])->name('destinationAdmin');
