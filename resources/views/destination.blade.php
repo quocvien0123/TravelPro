@@ -366,7 +366,7 @@
       <script src="/resources/js/owl.carousel.min.js"></script>
       <script src="/resources/js/jquery.stellar.min.js"></script>
       <script src="/resources/js/jquery.countdown.min.js"></script>
-      <script src="/resources/js/jquery.magnific-popup.min.js"></script>/resources/
+      <script src="/resources/js/jquery.magnific-popup.min.js"></script>
       <script src="/resources/js/bootstrap-datepicker.min.js"></script>
       <script src="/resources/js/aos.js"></script>
 
