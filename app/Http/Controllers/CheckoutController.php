@@ -23,6 +23,11 @@ class CheckoutController extends Controller
 
     public function showCancel(Request $request)
     {
+        return view("cancel");
+    }
+
+    public function showSuccess(Request $request)
+    {
         $transactionId = $request->input('transactionId');
         $status = $request->input('status');
         $code = $request->query('code');
@@ -59,7 +64,7 @@ class CheckoutController extends Controller
         $destination->update([
             'status' => $destination->status - session('number_of_people'),
         ]);
-        
+
         try {
             $mail = new PHPMailer(true);
 
@@ -79,7 +84,7 @@ class CheckoutController extends Controller
             $mail->CharSet = 'UTF-8';
             $mail->Subject = 'Thông tin đặt vé';
 
-            
+
             $body = view('emails.bookingInformation', compact('user', 'destination', 'transaction'));
             $mail->isHTML(true);
             $mail->Body = $body;
@@ -88,11 +93,6 @@ class CheckoutController extends Controller
         } catch (Exception $e) {
             Log::error("Email sending failed: {$e->getMessage()}");
         }
-        return view("cancel");
-    }
-
-    public function showSuccess(Request $request)
-    {
         return view("success");
     }
 
